@@ -1,12 +1,23 @@
 @charset "UTF-8";
 
+
+
 .navigation {
+  transition: 0.35s all ease;
+  top:0;
   height: 85px;
   background: #122433;
+  position: fixed;
   z-index: 3;
   border-bottom: 1px solid #AC966A;
   width: 100%
 }
+
+
+.small {
+    background: none;
+}
+
 
 .brand {
   position: absolute;
@@ -30,8 +41,8 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 5rem;
 }
-
 nav ul .u {
   list-style: none;
   margin: 0;
@@ -56,12 +67,12 @@ nav ul li a:visited {
   background: #122433;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.25s all ease;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: hsla(171, 19%, 54%, 1);;
-  color: #ffffff;
+  color: #AC966A;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -69,7 +80,7 @@ nav ul li a:visited:not(:only-child):after {
   content: ' ▾';
 }
 nav ul li ul li {
-  min-width: 210px;
+  min-width: 240px;
 }
 nav ul li ul li a {
   padding: 15px;
@@ -100,10 +111,22 @@ nav ul li ul li a {
         left:70vw;
     }
 }
-@media only screen and (max-width: 1175px) {
+
+@media only screen and (max-width: 1660px) {
+  .link {
+    background: #122433;
+  } 
+    
+  .navigation {
+    background: #122433;
+  } 
+}
+
+@media only screen and (max-width: 1380px) {
   .nav-mobile {
     display: block;
   }
+  
     
   nav {
     width: 100%;
@@ -111,6 +134,7 @@ nav ul li ul li a {
   }
   nav ul {
     display: none;
+    margin-right: 0;
   }
   nav ul li {
     float: none;
@@ -127,7 +151,7 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 1176px) {
+@media screen and (min-width: 1381px) {
   .nav-list {
     display: block !important;
   }

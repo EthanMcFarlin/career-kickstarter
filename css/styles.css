@@ -77,11 +77,20 @@
 }
 
 .btn{
-  background: #AC966A;
   color:#fff;
   font-size:1.2rem;
   padding: 1rem 2rem;
   text-decoration: none;
+  border-style: solid;
+  border-color: #AC966A;
+}
+
+.btn:hover{
+  background: #AC966A;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #F2F0E8;
 }
 
 #underline {
