@@ -53,17 +53,21 @@
   left:0;
   width:100vw;
   z-index:-1;
-  background: hsla(202, 53%, 29%, 0.75);
+  background: hsla(207, 48%, 14%, 3);
   opacity:0.85;
 }
 
 .header-content{
-  z-index:2;
+  margin-top: -15rem;
+  align-content: center;
+    
+    z-index:2;
 }
 
 .header-content h1{
   font-size:50px;
   margin-bottom:0;
+  line-height: 3rem;
 }
 
 .header-content p{
@@ -73,10 +77,25 @@
 }
 
 .btn{
-  background: #34b3a0;
+  background: #AC966A;
   color:#fff;
   font-size:1.2rem;
   padding: 1rem 2rem;
   text-decoration: none;
 }
 
+#underline {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    border-bottom: 5px solid #AC966A;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+h1 > span {
+    font-size: 2.5rem;
+    line-height: 1px;
+    font-style: italic;
+}
