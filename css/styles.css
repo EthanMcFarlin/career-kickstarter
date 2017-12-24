@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 /* Home-hero
 ======================================== */
@@ -20,7 +24,7 @@
     line-height: 1.5;
     color: #333;
     overflow-x: hidden;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     align-items: center;
     color: #fff;
@@ -37,34 +41,33 @@
   top:0;
   left:0;
   width:100%;
-  height:100vh;
+  height:82vh;
   overflow:hidden;
 }
 
 .fullscreen-video-wrap video{
-  min-height:100%;
+  min-height:50%;
   min-width:100%;
 }
 
 .header-overlay{
-  height:100vh;
+  height:82vh;
   position: absolute;
   top:0;
   left:0;
   width:100vw;
   z-index:-1;
-  background: hsla(207, 48%, 14%, 3);
+  background: hsl(207, 48%, 14%);
   opacity:0.85;
 }
 
 .header-content{
-  margin-top: -15rem;
   align-content: center;
     
     z-index:2;
 }
 
-.header-content h1{
+.header-content > h1 {
   font-size:50px;
   margin-bottom:0;
   line-height: 3rem;
@@ -73,10 +76,10 @@
 .header-content p{
   font-size:1.5rem;
   display:block;
-  padding-bottom:2rem;
+  padding-bottom:3rem;
 }
 
-.btn{
+.header-content > .btn{
   color:#fff;
   font-size:1.2rem;
   padding: 1rem 2rem;
@@ -93,18 +96,172 @@
   color: #F2F0E8;
 }
 
-#underline {
+#underline-long {
     margin-left: auto;
     margin-right: auto;
     width: 38%;
     border-bottom: 5px solid #AC966A;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 1.25rem;
 }
 
 
-h1 > span {
+.header-content > h1 > span {
     font-size: 2.5rem;
     line-height: 1px;
     font-style: italic;
 }
+
+/* Mission
+======================================== */
+
+.mission {
+   background: #646B6F;
+   height: 11rem;
+   border-bottom: 2px solid #AC966A;
+   border-top: 2px solid #AC966A; 
+   position: relative;
+}
+
+.mission > #rocket {
+    position: absolute;
+    color: #AC966A;
+    margin-top: 4vh;
+    margin-left: 15vw;
+}
+
+.mission > #flag {
+    color: #AC966A;
+    margin-top: 4vh;
+    margin-left: 85vw;
+    position: relative;
+}
+
+#underline-short {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    border-bottom: 5px solid #AC966A;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+}
+
+.mission > h1 {
+    color: white;
+    margin-top: 1vw;
+    text-align: center;
+    margin-left: 25vw;
+    text-transform: uppercase;
+    font-family: Raleway;
+    position: absolute;
+    width: 50%
+}
+
+.mission > h1 > span {
+    color: #fff;
+    text-transform: none;
+    font-size:16pt;
+}
+
+
+/* Mission Animation
+======================================== */
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(.9) rotate(-8deg);
+    transform: scale(.9) rotate(-8deg);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: scale(1.3) rotate(8deg);
+    transform: scale(1.3) rotate(8deg);
+  }
+
+  40%, 60% {
+    -webkit-transform: scale(1.3) rotate(-8deg);
+    transform: scale(1.3) rotate(-8deg);
+  }
+
+  80% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(.9) rotate(-8deg);
+    -ms-transform: scale(.9) rotate(-8deg);
+    transform: scale(.9) rotate(-8deg);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: scale(1.3) rotate(8deg);
+    -ms-transform: scale(1.3) rotate(8deg);
+    transform: scale(1.3) rotate(8deg);
+  }
+
+  40%, 60% {
+    -webkit-transform: scale(1.3) rotate(-8deg);
+    -ms-transform: scale(1.3) rotate(-8deg);
+    transform: scale(1.3) rotate(-8deg);
+  }
+
+  80% {
+    -webkit-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+.faa-tada.animated,
+.faa-tada.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-tada {
+  -webkit-animation: tada 12s linear infinite;
+  animation: tada 12s linear infinite;
+}
+
+/* Mission Resizing
+======================================== */
+
+@media only screen and (max-width: 2220px) {
+    .mission > h1 {
+        font-size: 0;
+        margin-top: 2vw;
+    }
+    
+    .mission > h1 > span {
+        font-size: 16pt;
+    }
+}
+@media only screen and (max-width: 963px) {
+    .mission > h1 {
+        margin-top: 3vw;
+    }
+    .mission > h1 > span {
+        font-size: 12pt;
+    }
+    }
+@media only screen and (max-width: 850px) {
+    .mission > h1 {
+        display: none;
+    }
+    }
+
+/* Explore Features
+======================================== */
+#test {
+        height: 20000px;
+        background: #172835;
+    }

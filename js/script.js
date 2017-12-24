@@ -24,10 +24,16 @@
   }); // end DOM ready
 })(jQuery); // end jQuery
 
+// Scrolling animation
+
 $(function(){
   $(window).scroll(function() {
-      if($(window).scrollTop() >= 50) {
-            $('.navigation').removeClass('small');   
+      if (window.pageYOffset <= 5) {
+            $('.navigation').addClass('small');
+            $('.link').addClass('small');         
+      }
+      if($(window).scrollTop() >= 20) {
+            $('.small').removeClass('small');   
         }
       })         
   });

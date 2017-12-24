@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 .navigation {
   transition: 0.35s all ease;
   top:0;
@@ -13,17 +11,19 @@
   width: 100%
 }
 
-
 .small {
     background: none;
 }
 
-
+.small .brand {
+    content: url(../img/logo.png);
+}
 .brand {
   position: absolute;
   float: left;
-  content: url(../img/logo.png);
+  content: url(../img/shrunken_logo.png);
   margin-top: 5px;
+  transition: 0.15s all ease;
 }
 
 .nav-container {border-bot
@@ -94,6 +94,10 @@ nav ul li ul li a {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
+.nav-dropdown > li > a {
+    text-transform: capitalize;
+}
+
 /* Mobile navigation */
 .nav-mobile {
   display: none;
@@ -116,7 +120,6 @@ nav ul li ul li a {
   .link {
     background: #122433;
   } 
-    
   .navigation {
     background: #122433;
   } 
