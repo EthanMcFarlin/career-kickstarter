@@ -12,16 +12,16 @@
     
     <body>
         <header>
-            <section class="navigation small">
+            <section class="navigation pre-scroll">
               <div class="nav-container">
-                <div class="brand small">
+                <div class="brand pre-scroll">
                   <a href=""><img alt="Career Kickstarter Logo" class="logo" style="float:left"></a>
                 </div>
                 <nav class>
                   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                   <ul class="nav-list">
                     <li>
-                      <a class="small link" href="#!">Resume Building</a>
+                      <a class="pre-scroll link" href="#!">Resume Building</a>
                       <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Full Tutorial</a>  
@@ -41,7 +41,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="small link" href="#!">Cover Letters</a>
+                      <a class="pre-scroll link" href="#!">Cover Letters</a>
                       <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Formatting</a>
@@ -55,7 +55,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="small link" href="#!">Job Openings</a>
+                      <a class="pre-scroll link" href="#!">Job Openings</a>
                       <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Web Design</a>
@@ -69,7 +69,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="small link" href="#!">User Articles</a>
+                      <a class="pre-scroll link" href="#!">User Articles</a>
                         <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Web Design</a>
@@ -83,7 +83,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="small link" href="#!">Productivity</a>
+                      <a class="pre-scroll link" href="#!">Productivity</a>
                       <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Web Design</a>
@@ -97,7 +97,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="small link" href="#!">Interviewing</a>
+                      <a class="pre-scroll link" href="#!">Interviewing</a>
                       <ul class="nav-dropdown">
                         <li>
                           <a href="#!">Web Design</a>
@@ -115,7 +115,8 @@
                 </div>
             </section>
         </header>
-            <div class="home-hero">
+        
+        <div class="home-hero">
             <div class="fullscreen-video-wrap">
                 <video poster="img/suit.png" autoplay="" loop="" type="video/mp4">
                     <source src="/img/home-hero-video.mp4" type="video/mp4">
@@ -127,20 +128,37 @@
               <h1>TAKING HOLD <br><span>of your career</span></h1>
               <div id="underline-long"></div>
               <p>Jump start your career with our personalized  business guidance, tailored to and written by real proffesionals in the global workforce.</p>
-              <a href="#" class="btn">Get Started</a>
+              <a href="#" id="scroll" class="btn">Get Started</a>
             </div>
         </div>
+        
         <div class="mission">
             <i id="rocket" class='fa fa-rocket faa-tada animated fa-4x'></i>
             <h1> Mission<br> <div id="underline-short"></div><span>We strive to transform the employment sphere by spreading 
             concise, flexible, and personalized career advice to our users. Join in today by exploring any number of our features, ranging to meet your exact needs!</span></h1>
             <i id="flag" class='fa fa-flag faa-tada animated fa-4x'></i>
         </div>
-        <section id="test">
-        </section>
-    
+        
+        <div class="parallax-window container" data-parallax="scroll" data-image-src="img/building-alternate.png">
+            <div class="home-about-textbox">
+                <h1> Explore Features </h1>
+                <div class="grid">
+                    <div class="grid-item"><img href="#" src="img/cards/company_reviews.png"></div>
+                    <div class="grid-item"><img href="#" src="img/cards/cover_letter.png"></div>
+                    <div class="grid-item"><img href="#" src="img/cards/interviewing.png"></div>
+                    <div class="grid-item"><img href="#" src="img/cards/job%20search.png"></div>
+                    <div class="grid-item"><img href="#" src="img/cards/productivity.png"></div>
+                    <div class="grid-item"><img href="#" src="img/cards/resume_builder.png"></div>
+                </div>
+            </div>
+        </div>     
+        <section id="articles"></section>
+        <section id="about-us"></section>
+        <section id="about-us"></section>
     <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
     <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/parallax.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery.scrollTo.min.js"></script>
     </body>
 </html>

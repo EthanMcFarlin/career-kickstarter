@@ -11,19 +11,20 @@
   width: 100%
 }
 
-.small {
+.pre-scroll {
     background: none;
 }
 
-.small .brand {
+.pre-scroll .brand {
     content: url(../img/logo.png);
 }
+
 .brand {
   position: absolute;
   float: left;
   content: url(../img/shrunken_logo.png);
   margin-top: 5px;
-  transition: 0.15s all ease;
+  transition: 0.35s all ease;
 }
 
 .nav-container {border-bot
@@ -67,7 +68,7 @@ nav ul li a:visited {
   background: #122433;
   color: #ffffff;
   text-decoration: none;
-  transition: 0.25s all ease;
+  transition: 0.35s all ease;
 }
 
 nav ul li a:hover,
@@ -110,6 +111,11 @@ nav ul li ul li a {
   width: 10px;
 }
 
+@media only screen and (max-width: 400px) {
+    .brand {
+        display: none;
+    }
+}
 @media only screen and (max-width: 550px) {
     .nav-mobile {
         left:70vw;

@@ -6,13 +6,12 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 html {
     overflow-x: hidden;
 }
-
 
 /* Home-hero
 ======================================== */
@@ -57,8 +56,7 @@ html {
   left:0;
   width:100vw;
   z-index:-1;
-  background: hsl(207, 48%, 14%);
-  opacity:0.85;
+  background: hsla(207, 48%, 14%, 0.85);
 }
 
 .header-content{
@@ -88,7 +86,7 @@ html {
   border-color: #AC966A;
 }
 
-.btn:hover{
+.header-content > .btn:hover{
   background: #AC966A;
   font-size:1.2rem;
   padding: 1rem 2rem;
@@ -117,7 +115,7 @@ html {
 
 .mission {
    background: #646B6F;
-   height: 11rem;
+   height: 9rem;
    border-bottom: 2px solid #AC966A;
    border-top: 2px solid #AC966A; 
    position: relative;
@@ -133,8 +131,8 @@ html {
 .mission > #flag {
     color: #AC966A;
     margin-top: 4vh;
-    margin-left: 85vw;
-    position: relative;
+    margin-left: 80vw;
+    position: absolute;
 }
 
 #underline-short {
@@ -148,6 +146,7 @@ html {
 
 .mission > h1 {
     color: white;
+    font-size: 16pt;
     margin-top: 1vw;
     text-align: center;
     margin-left: 25vw;
@@ -160,7 +159,7 @@ html {
 .mission > h1 > span {
     color: #fff;
     text-transform: none;
-    font-size:16pt;
+    font-size:13pt;
 }
 
 
@@ -235,33 +234,160 @@ html {
 /* Mission Resizing
 ======================================== */
 
-@media only screen and (max-width: 2220px) {
+@media only screen and (max-width: 1230px) {
     .mission > h1 {
         font-size: 0;
         margin-top: 2vw;
     }
     
     .mission > h1 > span {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 }
 @media only screen and (max-width: 963px) {
     .mission > h1 {
-        margin-top: 3vw;
+        margin-top: 2vh;
     }
     .mission > h1 > span {
         font-size: 12pt;
     }
-    }
+}
+
 @media only screen and (max-width: 850px) {
     .mission > h1 {
+        display: block;
+        margin-top: 4.5vh;
+        margin-left: 1.5rem;
+        left: 0;
+        right: 0;
+        width: 90%
+
+    }
+    
+    #flag {
         display: none;
     }
+    
+    #rocket {
+        display: none;
     }
+}
 
+@media only screen and (max-width: 535px) {
+    .mission > h1 > span {
+        font-size: 10pt;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .mission > h1 > span {
+        font-size: 8pt;
+    }
+}
 /* Explore Features
 ======================================== */
-#test {
-        height: 20000px;
-        background: #172835;
+
+#explore-features {
+    background-color: hsl(207, 48%, 14%); 
+    height: 45rem;
+}
+
+.parallax-window {
+    min-height: 50rem;
+    background: transparent;
+    width: 100vw;
+    
+    background: hsla(210, 35%, 16%, 0.4);
+
+}
+
+.container {
+	width: 100%;
+	max-width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.home-about-textbox {
+	padding: 4em;
+    text-align: center;
+	outline: 4px solid #AC966A;
+	outline-offset: -2.5em;
+	position: relative;
+    top: -2.5rem;
+}
+
+.home-about-textbox > h1 {
+	text-align: center;
+    color: #fff;
+    font-size: 16pt;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    font-family: Raleway;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0em;
+	background: #1A2836;
+    outline: 4px solid #AC966a;
+    width: 18%;
+
+}
+
+.grid {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  display: grid;
+  grid-template-columns: repeat(3,295px);  /* 3 columns */
+  grid-template-rows: repeat(2,227px); /* 2 rows  */
+  grid-gap:3.125vh 13vw; 
+  align-content: center;
+  position: relative;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #AC966A;
+  box-shadow: 6px 6px hsla(212, 33%, 9%, 0.7);
+}
+
+.grid > .grid-item > img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1350px) {
+    .grid {
+        grid-gap:3.125vh 5vw;
     }
+    .home-about-textbox > h1 {
+        font-size: 12pt;
+        margin-top:2rem;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .grid {
+        grid-gap:3.125vh 1vw;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .grid {
+        grid-template-columns: repeat(3,200px);  
+        grid-template-rows: repeat(2,153px); 
+    }
+}
+
+#articles {
+    border-top: 2px solid #AC966A;
+    height: 20rem;
+    width: 100vw;
+    background: #122433;
+}
+
+#test {
+    border-top: 2px solid #AC966A;
+    height: 40rem;
+    width: 100vw;
+}
