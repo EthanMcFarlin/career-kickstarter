@@ -43,8 +43,8 @@ $(function(){
 $(function(){
     $("#scroll").click(function(e){
         e.preventDefault();
-        $path=$(".parallax-window").offset().top;
-        $('body,html').animate({scrollTop:$path},1000);
+        $path=$(".explore-features-content").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
     });
 });
 
