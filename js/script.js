@@ -38,6 +38,29 @@ $(function(){
       })         
   });
 
+var nav = document.querySelector('.navigation');
+var position = 0;
+
+window.addEventListener('scroll', function(){
+    if (window.pageYOffset >= 800) {
+        if(position < window.pageYOffset) {
+        //console.log('down')
+        nav.classList += ' minified';
+        position = window.pageYOffset;
+      } else {
+        //console.log('up');
+        nav.classList = 'navigation'
+        position = window.pageYOffset;
+      }
+    }
+})
+
+
+
+
+
+
+
 // Smooth-scrolling button
 
 $(function(){
@@ -48,94 +71,7 @@ $(function(){
     });
 });
 
-// Animated slider
 
-$('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
-  var currentSlide = 0;
-  
-  function move(newIndex) {
-    var animateLeft, slideLeft;
-    
-    advance();
-    
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-    
-    bulletArray[currentIndex].removeClass('active_slider');
-    bulletArray[newIndex].addClass('active_slider');
-    
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-    } else {
-      slideLeft = '-100%';
-    }
-    
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
-    });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
-    });
-  }
-
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-        if (currentIndex === 0) {
-            $('#quote-box').html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>');
-        }
-        if (currentIndex === 1) {
-            $('#quote-box').html('"I previously felt as though the whole employment process was really weighing me down, but with Career Kickstarter, that pressure has lifted off my shoulders." <span id="stories-name">- Ryan F. </span>');
-        }
-        if (currentIndex === 2) {
-            $('#quote-box').html('"Career Kickstarter has opened up a number of opportunities in my proffesional life, and has given me a sense of grounding in the employment process." <span id="stories-name">- George F. </span>');
-        }
-        if (currentIndex === 3) {
-
-            $('#quote-box').html('"Applying the tips on Career Kickstarter has guided me towards my true passions and a more fufilling life. <span id="stories-name">- Sofia G. </span>');
-        }
-      } else {
-        move(0);
-        $('#quote-box').html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>');
-      }
-    }, 6000);
-  }
-
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-    
-    if (index === currentIndex) {
-      $button.addClass('active_slider');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-    
-  advance();
-});
 
 // Footer
 

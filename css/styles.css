@@ -54,6 +54,10 @@ html {
   transition: 0.35s all ease;
 }
 
+.minified {
+    transform: translateY(-90px);
+}
+
 .nav-container {border-bot
   max-width: 2000px;
   margin: 0 auto;
