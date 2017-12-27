@@ -102,7 +102,6 @@ $('.slider').each(function() {
     timeout = setTimeout(function() {
       if (currentIndex < ($slides.length - 1)) {
         move(currentIndex + 1);
-        console.log(currentIndex); 
         if (currentIndex === 0) {
             $('#quote-box').html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>');
         }
@@ -138,3 +137,16 @@ $('.slider').each(function() {
   advance();
 });
 
+// Footer
+
+$(function() {
+  $('.footer-links-holder h3').click(function () {
+    $(this).parent().toggleClass('active');
+  });
+});
+
+// Waypoint + Animate.css Animations on Scroll
+
+$(document).ready(function() {
+    InitWaypointAnimations();
+});

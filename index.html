@@ -8,8 +8,8 @@
         <link href="css/styles.css" rel="stylesheet" type=text/css>
         <link href="css/fa-svg-with-js.css" rel="stylesheet" type=text/css>
         <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+        <link href="css/animate.min.css" rel="stylesheet" type=text/css>
     </head>
-    
     <body>
         <header>
             <section class="navigation pre-scroll">
@@ -124,17 +124,17 @@
                 </video>
             </div>
             <div class="header-overlay"></div>
-            <div class="header-content">
-              <h1>TAKING HOLD <br><span>of your career</span></h1>
-              <div id="underline-long"></div>
-              <p>Jump start your career with our personalized  business guidance, tailored to and written by real proffesionals in the global workforce.</p>
-              <a href="#" id="scroll" class="btn">Get Started</a>
+            <div id="header-content" class="header-content">
+              <h1 class="animated fadeInDown">TAKING HOLD <br><span>of your career</span></h1>
+              <div class="animated fadeInLeft" id="underline-long"></div>
+              <p class="animated fadeInUp">Jump start your career with our personalized  business guidance, tailored to and written by real proffesionals in the global workforce.</p>
+              <a href="#" id="scroll" class="btn animated fadeIn">Get Started</a>
             </div>
         </div>
         
         <div class="mission">
             <i id="rocket" class='fa fa-rocket faa-tada animated fa-4x'></i>
-            <h1> Mission<br> <div id="underline-short"></div><span>We strive to transform the employment sphere by spreading 
+            <h1 class="animated fadeInUp"> Mission<br> <div id="underline-short"></div><span>We strive to transform the employment sphere by spreading 
             concise, flexible, and personalized career advice to our users. Join in today by exploring any number of our extensive employment guides!</span></h1>
             <i id="flag" class='fa fa-flag faa-tada animated fa-4x'></i>
         </div>
@@ -142,28 +142,28 @@
         <div id="explore-features-parallax" class="parallax-window container" data-parallax="scroll" data-image-src="img/building-alternate.png">
             <div class="explore-features-content">
                 <h1> Explore Features </h1>
-                <div class="grid">
-                    <div class="grid-item">
+                <div class="grid" >
+                    <div class="grid-item ez-animate">
                         <a href="#"><img src="img/cards/company_reviews.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Company Reviews<br><span>Educate your job search by browsing user experiences with <br> a wide-range of companies.</span></p></figcaption> </a>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item ez-animate" data-animation="pulse">
                         <a href="#"><img src="img/cards/cover_letter.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Cover Lettering <br><span>Captivate potential employers' attention with masterfully constructed cover-letters.</span></p></figcaption></a>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item ez-animate" data-animation="pulse">
                         <a href="#"><img src="img/cards/interviewing.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Interviewing<br><span>Ace your first impression with employers by reading our highly practical interview tips.</span></p></figcaption> </a>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item ez-animate" data-animation="pulse">
                         <a href="#"><img src="img/cards/job%20search.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Job Search<br><span>Conquer the job searching process, armed with our extensive and highly thorough guide.</span></p></figcaption> </a>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item ez-animate" data-animation="pulse">
                         <a href="#"><img src="img/cards/productivity.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Worklife Productivity<br><span>Maximize your work-flow by analyzing research-backed and practical tips.</span></p></figcaption> </a>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item ez-animate" data-animation="pulse">
                         <a href="#"><img src="img/cards/resume_builder.png"></a>
                         <a href="#"><figcaption class="explore-caption"><p>Resume<br><span>Master the format of the resume, arguably the most integral componet of your job application. </span></p></figcaption> </a>
                     </div>
@@ -172,7 +172,7 @@
         </div> 
         
         <section id="user-stories">
-            <div class="slider">
+            <div class="slider ez-animate" data-animation="fadeInLeft">
               <div class="slide_viewer">
                 <div class="slide_group">
                   <div class="slide">
@@ -186,7 +186,7 @@
                 </div>
               </div>
             </div><!-- End // .slider -->
-            <div id="user-stories-text"> 
+            <div id="user-stories-text" class="ez-animate" data-animation="fadeIn"> 
                 <h1 id="stories-header"> User Stories </h1>
                 <div id="stories-underline"></div>
                 <p id="stories-description">Delve into Career Kickstarter's impact on users' personal experiences.</p>
@@ -195,7 +195,7 @@
         </section>
         <div id="user-articles-parallax" class="parallax-window" data-parallax="scroll" data-image-src="img/building-parallax.png">
             <div id="blog-contents">
-                <div class="blog-card">
+                <div class="blog-card ez-animate" data-animation="fadeIn">
                 <div class="photo photo1"></div>
                 <ul class="details">
                     <li class="author">Ethan McFarlin</li>
@@ -214,7 +214,7 @@
 
                 </div>
             </div>
-            <div class="blog-card alt">
+            <div class="blog-card alt ez-animate" data-animation="fadeIn">
                 <div class="photo photo2"></div>
                 <ul class="details">
                     <li class="author">Ethan McFarlin</li>
@@ -234,16 +234,99 @@
             </div>
             </div>
         </div>
-        <section id="call-to-action">
+        <section id="about-us">
             <div id="about-us-image"></div>
-            <div id="about-us-text">
+            <div id="about-us-text" class="ez-animate" data-animation="fadeIn">
                 <p>We prioritize the user's experience and place value in the hand to hand relationship we share with them. <br><br> Our commitment to this hospitality takes after the business etiquette of the contemporary workplace. </p>
                 <a href="#" class="about-btn">Learn More</a>
             </div>
         </section>
+    <div id="call-to-action" class="parallax-window" data-parallax="scroll" data-image-src="img/skyscraper-parallax.jpg"></div>
+    <footer>
+  <div class="centered clearfix">
+    <div class="footer-logo ez-animate" data-animation="fadeInLeft">
+      <img class="logo" src="img/enlarged_logo.png">
+      <div class="social">
+        <a href="https://www.facebook.com/" class="facebook"><img src="img/twitter.png"></a>
+        <a href="https://twitter.com/" class="twitter"><img src="img/facebook.png"></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><img src="img/google_plus.png"></a>
+        </div>
+    </div>
+    <div class="footer-contact ez-animate" data-animation="fadeIn">
+       <p><a href="mailto:">careerkickstartercs@gmail.com</a></p>
+  
+       <p><a href="">4515 Barnes Rd<br />Colorado Springs, CO 80917</a></p>
+    </div>
+    <div class="footer-navigation ez-animate" data-animation="fadeIn">
+      <div class="footer-links-holder">
+        <h3><a href="">Resumes</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Full Tutorial</a></li>
+          <li><a href="">Formats</a></li>
+          <li><a href="">Tips</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-holder">
+        <h3><a href="">Cover Letters</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Formatting</a></li>
+          <li><a href="">Content Tips</a></li>
+          <li><a href="">Builder</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-holder">
+        <h3><a href="">Job Openings</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Resources</a></li>
+          <li><a href="">Strategies</a></li>
+          <li><a href="">Communication</a></li>
+          <li><a href="">Networking</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-holder">
+        <h3><a href="">Career Articles</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Workforce</a></li>
+          <li><a href="">Education</a></li>
+          <li><a href="">Industry</a></li>
+        </ul>
+      </div>    
+      <div class="footer-links-holder">
+        <h3><a href="">Productivity</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Tips</a></li>
+          <li><a href="">Methods</a></li>
+          <li><a href="">Services</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-links-holder">
+        <h3><a href="">Interviewing</a></h3>
+        <ul class="footer-links">
+          <li><a href="">Preparation</a></li>
+          <li><a href="">Questions</a></li>
+          <li><a href="">Habbits</a></li>
+          <li><a href="">Dress</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+  <div class="bottom-bar">
+      Thomas B. Doherty High School FBLA © 2018 | <a href="">Works Cited</a> | <a href="">Terms of Service</a> | Design by Ethan McFarlin | No templates in use
+  </div>
+</footer>
     <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
     <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/fontawesome-all.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/parallax.min.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/easy-waypoint-animate.js"></script>
     </body>
 </html>
