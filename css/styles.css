@@ -15,6 +15,13 @@ html {
     overflow-x: hidden;
 }
 
+::selection {
+    background: #AC966A; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #AC966A; /* Gecko Browsers */
+}
 /* Navigation
 ======================================== */
 
