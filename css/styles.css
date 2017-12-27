@@ -1128,11 +1128,65 @@ nav ul li ul li a {
 /* About Us
 ======================================== */
 #call-to-action {
-    height: 500px;
+    height: 350px;
     background: hsla(210, 35%, 16%, 0.8);
     border-top: 2px solid #AC966A;
     border-bottom: 2px solid #AC966A;
+}
 
+#newsletter-container {
+    outline: 1px solid #AC966A;
+    background-color: hsla(196, 5%, 41%, 0.6);
+    width: 50%;
+    height: 300px;
+}
+
+#newsletter-image {
+    display: block;
+    align-content: center; 
+    height: 200px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+#newsletter-text {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 20pt;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-bottom: 2px solid #AC966A;
+    width: 25vw;
+}
+
+#mc_embed_signup{
+    clear:left; 
+    font:14px; 
+    width:100%;
+    font-family: Raleway;
+    margin-top: -50px;
+}
+
+@media only screen and (max-width: 1520px) {
+    #newsletter-text {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    #newsletter-image {
+        height: 100px;
+        width:300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #newsletter-image {
+        height: 66px;
+        width: 200px;
+    }
 }
 
 /* Footer
@@ -1144,7 +1198,6 @@ footer {
   @import "https://fonts.googleapis.com/css?family=Open+Sans";
   font-family: 'Open Sans', sans-serif;
   border-top: 18px solid #191919;
-
 }
 footer .centered {
   max-width: 1200px;
@@ -1295,6 +1348,9 @@ footer p, footer li {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 10px 0;
+}
+footer li a {
+    color: #7F7D7F;
 }
 footer a {
   color: #fff;
