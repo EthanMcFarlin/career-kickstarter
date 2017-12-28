@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <section class="navigation pre-scroll">
+            <section class="navigation pre-scroll" data-threshold="600">
               <div class="nav-container">
                 <a href="index.html"><div class="brand pre-scroll">
                   <img alt="Career Kickstarter Logo" class="logo" style="float:left">
@@ -26,7 +26,7 @@
                       <a class="pre-scroll link" href="#!">Resume Building</a>
                       <ul class="nav-dropdown">
                         <li>
-                          <a href="#!">Full Tutorial</a>  
+                          <a href="pages/resume-building/resume_tutorial.html">Full Tutorial</a>  
                         </li>
                         <li>
                           <a href="#!">Resume Formats</a>
@@ -124,6 +124,7 @@
             </section>
         </header>
         
+        <main>
         <div class="home-hero">
             <div class="fullscreen-video-wrap">
                 <video poster="img/suit.png" autoplay="" loop="" type="video/mp4">
@@ -203,7 +204,7 @@
         </section>
         <div id="user-articles-parallax" class="parallax-window" data-parallax="scroll" data-image-src="img/banners/building-parallax.png">
             <div id="blog-contents">
-                <div class="blog-card ez-animate" data-animation="fadeIn">
+                <div class="blog-card">
                 <div class="photo photo1"></div>
                 <ul class="details">
                     <li class="author">Ethan McFarlin</li>
@@ -222,7 +223,7 @@
 
                 </div>
             </div>
-            <div class="blog-card alt ez-animate" data-animation="fadeIn">
+            <div class="blog-card alt">
                 <div class="photo photo2"></div>
                 <ul class="details">
                     <li class="author">Ethan McFarlin</li>
@@ -243,7 +244,7 @@
             </div>
         </div>
         <section id="about-us">
-            <div id="about-us-image" class="ez-animate" data-animation="fadeInLeft"></div>
+            <div id="about-us-image"></div>
             <div id="about-us-text" class="ez-animate" data-animation="fadeIn">
                 <p>We prioritize the user's experience and place value in the hand to hand relationship we share with them. <br><br> Our commitment to this hospitality takes after the business etiquette of the contemporary workplace. </p>
                 <a href="#" class="about-btn">Learn More</a>
@@ -268,11 +269,11 @@
 <footer>
   <div class="centered clearfix">
     <div class="footer-logo ez-animate" data-animation="fadeInLeft">
-      <img class="logo" src="img/logos/enlarged_logo.png">
+      <a href="index.html"><img class="logo" src="img/logos/enlarged_logo.png"></a>
       <div class="social">
-        <a href="https://www.facebook.com/" class="facebook"><img src="img/logos/twitter.png"></a>
-        <a href="https://twitter.com/" class="twitter"><img src="img/logos/facebook.png"></a>
-        <a href="https://www.linkedin.com/" class="linkedin"><img src="img/logos/google_plus.png"></a>
+        <a href="https://www.facebook.com/" class="facebook"><img src="/img/logos/twitter.png"></a>
+        <a href="https://twitter.com/" class="twitter"><img src="/img/logos/facebook.png"></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><img src="/img/logos/google_plus.png"></a>
         </div>
     </div>
     <div class="footer-contact ez-animate" data-animation="fadeIn">
@@ -284,10 +285,10 @@
       <div class="footer-links-holder">
         <h3><a href="">Resumes</a></h3>
         <ul class="footer-links">
-          <li><a href="">Full Tutorial</a></li>
-          <li><a href="">Formats</a></li>
-          <li><a href="">Tips</a></li>
-          <li><a href="">Services</a></li>
+          <li><a href="/pages/resume-building/resume_tutorial.html">Full Tutorial</a></li>
+          <li><a href="/pages/resume-building/resume_formats.html">Formats</a></li>
+          <li><a href="/pages/resume-building/resume_tips.html">Tips</a></li>
+          <li><a href="/pages/resume-building/resume_services.html">Services</a></li>
         </ul>
       </div>
       <div class="footer-links-holder">
@@ -350,7 +351,7 @@
     <script language="JavaScript" type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/easy-waypoint-animate.js"></script>
     
-    <script> $(".slider").each(function(){function e(e){var n,t;s(),i.is(":animated")||l===e||(o[l].removeClass("active_slider"),o[e].addClass("active_slider"),t=e>l?"100%":"-100%",a.eq(e).css({display:"block",left:t}),i.animate({left:n},function(){a.eq(l).css({display:"none"}),a.eq(e).css({left:0}),i.css({left:0}),l=e}))}function s(){clearTimeout(n),n=setTimeout(function(){l<a.length-1?(e(l+1),0===l&&$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'),1===l&&$("#quote-box").html('"I previously felt as though the whole employment process was really weighing me down, but with Career Kickstarter, that pressure has lifted off my shoulders." <span id="stories-name">- Ryan F. </span>'),2===l&&$("#quote-box").html('"Career Kickstarter has opened up a number of opportunities in my proffesional life, and has given me a sense of grounding in the employment process." <span id="stories-name">- George F. </span>'),3===l&&$("#quote-box").html('"Applying the tips on Career Kickstarter has guided me towards my true passions and a more fufilling life. <span id="stories-name">- Sofia G. </span>')):(e(0),$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'))},6e3)}var n,t=$(this),i=t.find(".slide_group"),a=t.find(".slide"),o=[],l=0;$.each(a,function(s){var n=$('<a class="slide_btn">&bull;</a>');s===l&&n.addClass("active_slider"),n.on("click",function(){e(s)}).appendTo(".slide_buttons"),o.push(n)}),s()});  </script>
-    
+    <script> $(".slider").each(function(){function e(e){var n,t;s(),i.is(":animated")||l===e||(o[l].removeClass("active_slider"),o[e].addClass("active_slider"),t=e>l?"100%":"-100%",a.eq(e).css({display:"block",left:t}),i.animate({left:n},function(){a.eq(l).css({display:"none"}),a.eq(e).css({left:0}),i.css({left:0}),l=e}))}function s(){clearTimeout(n),n=setTimeout(function(){l<a.length-1?(e(l+1),0===l&&$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'),1===l&&$("#quote-box").html('"I previously felt as though the whole employment process was really weighing me down, but with Career Kickstarter, that pressure has lifted off my shoulders." <span id="stories-name">- Ryan F. </span>'),2===l&&$("#quote-box").html('"Career Kickstarter has opened up a number of opportunities in my proffesional life, and has given me a sense of grounding in the employment process." <span id="stories-name">- George F. </span>'),3===l&&$("#quote-box").html('"Applying the tips on Career Kickstarter has guided me towards my true passions and a more fufilling life. <span id="stories-name">- Sofia G. </span>')):(e(0),$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'))},6e3)}var n,t=$(this),i=t.find(".slide_group"),a=t.find(".slide"),o=[],l=0;$.each(a,function(s){var n=$('<a class="slide_btn">&bull;</a>');s===l&&n.addClass("active_slider"),n.on("click",function(){e(s)}).appendTo(".slide_buttons"),o.push(n)}),s()}); $(function(){$(window).scroll(function(){window.pageYOffset<=40&&($(".navigation").addClass("pre-scroll"),$(".link").addClass("pre-scroll")),$(window).scrollTop()>=40&&$(".pre-scroll").removeClass("pre-scroll")})});  </script>
+    </main>
     </body>
 </html>

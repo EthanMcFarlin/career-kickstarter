@@ -22,6 +22,7 @@ html {
 ::-moz-selection {
     background: #AC966A; /* Gecko Browsers */
 }
+
 /* Navigation
 ======================================== */
 
@@ -43,13 +44,13 @@ html {
 }
 
 .pre-scroll .brand {
-    content: url(../img/logos/logo.png);
+    content: url(/img/logos/logo.png);
 }
 
 .brand {
   position: absolute;
   float: left;
-  content: url(../img/logos/shrunken_logo.png);
+  content: url(/img/logos/shrunken_logo.png);
   margin-top: 5px;
   transition: 0.35s all ease;
 }
@@ -239,6 +240,127 @@ nav ul li ul li a {
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+/* Header
+======================================== */
+
+.page-description {
+    font-family: Raleway;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+    height: 45vh;
+    text-align: center;
+    margin-top: 85px;
+}
+
+#page-description-image {
+    background: hsla(210, 35%, 16%, 0.9);
+    height: 45vh;
+    border-bottom: 2px solid #AC966A;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+#page-description-labels {
+    color: white;
+    text-align: left;
+    margin-left: 15vw;
+    padding-top: 70px;
+    width: 60vw;
+}
+#underline {
+    border-top: 2px solid #AC966A;
+    padding-bottom: 40px;
+}
+#page-description-labels > h1 {
+    font-size: 22pt;
+    font-stretch: expanded;
+    
+}
+
+#page-description-labels > h1 > span {
+    color: #AC966A;
+}
+
+#page-description-labels > p {
+    
+}
+
+
+/* Page Signifier
+======================================== */
+.page-signifier {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0F161E;
+    border-bottom: 2px solid #AC966A;
+}
+
+.page-signifier ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 15vw;
+    
+}
+
+.page-signifier ul li {
+    color: #fff;
+    font-size: 12pt;
+    font-family: sans-serif;
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.page-signifier ul li.page-current {
+    color: #AC966A;
+    font-weight: 700;
+}
+
+.page-signifier ul a:hover li {
+    color: #7F7D7F;
+    font-weight: 700;
+}
+
+/* Inner Site Contents
+======================================== */
+#site-inner {
+    height: 2000px;
+    background: #F1F0E7;
+}
+
+.left-sidebar {
+    margin-left: 15vw;
+    width: 165px;
+    padding-top: 40px;
+    background: white;
+    height: 467px;
+}
+
+.left-sidebar > h1 {
+    font-family:
+}
+
+.content-sidebar-wrap {
+    
+}
+
+.feature-article {
+    
+}
+
+.filler-content {
+    
+}
+
+.right-sidebar {
+    
 }
 
 /* Footer

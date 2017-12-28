@@ -26,23 +26,14 @@
 
 // Navigation bar scrolling animation
 
-$(function(){
-  $(window).scroll(function() {
-      if (window.pageYOffset <= 40) {
-            $('.navigation').addClass('pre-scroll');
-            $('.link').addClass('pre-scroll');         
-      }
-      if($(window).scrollTop() >= 40) {
-            $('.pre-scroll').removeClass('pre-scroll');   
-        }
-      })         
-  });
+
 
 var nav = document.querySelector('.navigation');
 var position = 0;
 
 window.addEventListener('scroll', function(){
-    if (window.pageYOffset >= 800) {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset >= ($('.navigation').data('threshold'))) {
         if(position < window.pageYOffset) {
         //console.log('down')
         nav.classList += ' minified';
@@ -54,12 +45,6 @@ window.addEventListener('scroll', function(){
       }
     }
 })
-
-
-
-
-
-
 
 // Smooth-scrolling button
 
