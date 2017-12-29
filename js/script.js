@@ -71,12 +71,12 @@ $(document).ready(function() {
 
 // Sidescroll navigation
 
-/*$('.filler-content').scrollNav({
-    sections: 'h2',
+$('.filler-content').scrollNav({
+    sections: 'h2.content-header',
     subSections: false,
     sectionElem: 'section',
     showHeadline: true,
-    headlineText: 'Article Contents',
+    headlineText: 'Related Content',
     showTopLink: true,
     topLinkText: 'Top',
     fixedMargin: 40,
@@ -90,5 +90,4 @@ $(document).ready(function() {
     onInit: null,
     onRender: null,
     onDestroy: null
-});*/
-
+});

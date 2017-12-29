@@ -332,9 +332,8 @@ nav ul li ul li a {
 /* Inner Site Contents
 ======================================== */
 #site-inner {
-    height: 2000px;
-    background: #F1F0E7;
-    background: #fff;
+    height: 3000px;
+    background: #F2F0E8;
 }
 
 .content-sidebar-wrap {
@@ -343,14 +342,13 @@ nav ul li ul li a {
 }
 
 .feature-article {
-    
-    margin-left: 24vw;
+    margin-left: 470px;
     padding-top: 40px;
-    width: 950px;
+    width: 1050px;
     padding-left: 40px;
     padding-right: 40px;
     background: #fff;
-
+    outline: 2px solid rgba(23,40,53,0.1);
 }
 
 .filler-content {
@@ -360,31 +358,34 @@ nav ul li ul li a {
     margin: 0 0 15px;
 }
 
+.article-underline {
+    border-bottom: 2px solid #AC966A;
+    width: 25%;
+    float: left;
+}
+
 .content-image-span {
     height: 300px;
     width: 100%;
     outline: 2px solid rgba(67%,58%,41%,0.2);
-    
-    
 }
 
-.filler-content > h2 {
-    font-size: 28px;
+.content-header {
+    background: rgba(213,202,178, 0.2);
+    font-size: 22px;
     line-height: 133.3%;
-    font-weight:600;
+    font-weight:500;
     margin: 0 0 15px;
-    font-family: "Palatino"
+    font-family: Raleway, "Palatino"
     color: red;
     color: #34404B;
-    background: #eee;
-    border-left-color: #34404B;
+    border-left-color: #AC966A;
     padding-left: 20px;
     border-left-style: solid;
-    border-left-width:8px!important;
-    
+    border-left-width:4px!important; 
 }
 
-.filler-content > p {
+.content-text {
     font-size: 17px;
     line-height: 25px;
     font-weight: 400;
@@ -403,28 +404,37 @@ nav ul li ul li a {
 
 .scroll-nav {
   position: absolute;
+  left: 13vw;
 }
 
 .scroll-nav.fixed .scroll-nav__wrapper {
   position: fixed;
-  top: 60px;
+  top: 120px;
 }
 
 .scroll-nav__wrapper {
-  border: 1px solid #006f99;
-  background-color: #1e8cb7;
-  border-radius: 6px;
+  outline: 2px solid rgba(23,40,53,0.1);
+  background-color: #fff;
   padding: 10px 5px;
 }
 
 .scroll-nav__heading {
   border-bottom: 2px solid #fff;
   display: block;
+  font-family: Raleway, Georgia;
   margin-bottom: 15px;
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 10px;
   width: 40px;
+}
+
+span.scroll-nav__heading {
+  font-size: 14pt;
+  text-align: center;
+  border-bottom: 2px solid #AC966A;
+  color: black;
+  font-weight: 500;
 }
 
 .scroll-nav__heading:before {
@@ -435,6 +445,58 @@ nav ul li ul li a {
   margin-bottom: 0;
 }
 
+.scroll-nav__item {
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 40px;
+  list-style: none;
+
+}
+.scroll-nav__item a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway, Georgia;
+    font-size: 11pt;
+    padding-left: 6px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.scroll-nav__item:before {
+  color: black;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+  width: 40px;
+}
+.scroll-nav__item.active {
+  font-weight: 700;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 8px;
+  border-left: 4px solid #AC966A;
+}
+
+
+.scroll-nav__item.active a:hover {
+  font-weight: 800;
+  font-size: 10pt;
+}
+
+
+.scroll-nav__link {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding-left: 42px;
+}
+.scroll-nav__link:hover {
+  color: #AC966A;
+}
 
 @media screen and (min-width: 60em) {
   .post__article {
