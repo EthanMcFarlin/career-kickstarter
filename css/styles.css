@@ -260,6 +260,7 @@ nav ul li ul li a {
     background: hsla(210, 35%, 16%, 0.9);
     height: 45vh;
     border-bottom: 2px solid #AC966A;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .parallax-window {
@@ -333,34 +334,142 @@ nav ul li ul li a {
 #site-inner {
     height: 2000px;
     background: #F1F0E7;
-}
-
-.left-sidebar {
-    margin-left: 15vw;
-    width: 165px;
-    padding-top: 40px;
-    background: white;
-    height: 467px;
-}
-
-.left-sidebar > h1 {
-    font-family:
+    background: #fff;
 }
 
 .content-sidebar-wrap {
+    padding-top: 40px;
     
 }
 
 .feature-article {
     
+    margin-left: 24vw;
+    padding-top: 40px;
+    width: 950px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fff;
+
 }
 
 .filler-content {
+    font-family: "Montserrat";
+    line-height: 133.3%;
+    font-weight: 300;
+    margin: 0 0 15px;
+}
+
+.content-image-span {
+    height: 300px;
+    width: 100%;
+    outline: 2px solid rgba(67%,58%,41%,0.2);
+    
     
 }
 
-.right-sidebar {
+.filler-content > h2 {
+    font-size: 28px;
+    line-height: 133.3%;
+    font-weight:600;
+    margin: 0 0 15px;
+    font-family: "Palatino"
+    color: red;
+    color: #34404B;
+    background: #eee;
+    border-left-color: #34404B;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left-width:8px!important;
     
+}
+
+.filler-content > p {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    font-family: "Georgia", "serif", "Montserrat", 'Open Sans', 'Helvetica Neue';
+    padding: 10px;
+}
+
+.right-sidebar {
+    background: red;
+    width: 200px;
+    height: 50px;
+}
+/* Sticky, Highlighting Navigation Bar
+======================================== */
+
+.scroll-nav {
+  position: absolute;
+}
+
+.scroll-nav.fixed .scroll-nav__wrapper {
+  position: fixed;
+  top: 60px;
+}
+
+.scroll-nav__wrapper {
+  border: 1px solid #006f99;
+  background-color: #1e8cb7;
+  border-radius: 6px;
+  padding: 10px 5px;
+}
+
+.scroll-nav__heading {
+  border-bottom: 2px solid #fff;
+  display: block;
+  margin-bottom: 15px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 40px;
+}
+
+.scroll-nav__heading:before {
+  font-size: 40px;
+}
+
+.scroll-nav__list {
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 60em) {
+  .post__article {
+    margin-left: 210px;
+    padding: 30px;
+  }
+
+  .scroll-nav__wrapper {
+    padding: 15px 10px;
+  }
+
+  .scroll-nav__heading {
+    font-size: 1.7em;
+    text-indent: -16px;
+    width: 170px;
+  }
+
+  .scroll-nav__item {
+    font-size: 19px;
+    line-height: 1.4em;
+    overflow: visible;
+    width: 170px;
+  }
+  .scroll-nav__item.active {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    padding-left: 0.5em;
+  }
+
+  .scroll-nav__link {
+    padding-left: 30px;
+  }
 }
 
 /* Footer

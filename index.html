@@ -344,13 +344,14 @@
   </div>
 </footer>
     <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
-    <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-migrate-3.0.1.min.js"></script>     
     <script language="JavaScript" type="text/javascript" src="/js/fontawesome-all.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/parallax.min.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script language="JavaScript" type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/easy-waypoint-animate.js"></script>
-    
+
+    <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
     <script> $(".slider").each(function(){function e(e){var n,t;s(),i.is(":animated")||l===e||(o[l].removeClass("active_slider"),o[e].addClass("active_slider"),t=e>l?"100%":"-100%",a.eq(e).css({display:"block",left:t}),i.animate({left:n},function(){a.eq(l).css({display:"none"}),a.eq(e).css({left:0}),i.css({left:0}),l=e}))}function s(){clearTimeout(n),n=setTimeout(function(){l<a.length-1?(e(l+1),0===l&&$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'),1===l&&$("#quote-box").html('"I previously felt as though the whole employment process was really weighing me down, but with Career Kickstarter, that pressure has lifted off my shoulders." <span id="stories-name">- Ryan F. </span>'),2===l&&$("#quote-box").html('"Career Kickstarter has opened up a number of opportunities in my proffesional life, and has given me a sense of grounding in the employment process." <span id="stories-name">- George F. </span>'),3===l&&$("#quote-box").html('"Applying the tips on Career Kickstarter has guided me towards my true passions and a more fufilling life. <span id="stories-name">- Sofia G. </span>')):(e(0),$("#quote-box").html('"This site has been instrumental in helping to reinvent my identity as a proffesional and has changed my outlook on employment entirely." <br> <span id="stories-name">- Steve R.  </span>'))},6e3)}var n,t=$(this),i=t.find(".slide_group"),a=t.find(".slide"),o=[],l=0;$.each(a,function(s){var n=$('<a class="slide_btn">&bull;</a>');s===l&&n.addClass("active_slider"),n.on("click",function(){e(s)}).appendTo(".slide_buttons"),o.push(n)}),s()}); $(function(){$(window).scroll(function(){window.pageYOffset<=40&&($(".navigation").addClass("pre-scroll"),$(".link").addClass("pre-scroll")),$(window).scrollTop()>=40&&$(".pre-scroll").removeClass("pre-scroll")})});  </script>
     </main>
     </body>

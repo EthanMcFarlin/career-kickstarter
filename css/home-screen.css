@@ -432,7 +432,7 @@
     }
 }
 
-/* User Articles
+/* User Testimonies
 ======================================== */
 
 #user-stories {
@@ -589,7 +589,7 @@
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 1);
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 #blog-contents {

@@ -32,7 +32,6 @@ var nav = document.querySelector('.navigation');
 var position = 0;
 
 window.addEventListener('scroll', function(){
-    console.log(window.pageYOffset);
     if (window.pageYOffset >= ($('.navigation').data('threshold'))) {
         if(position < window.pageYOffset) {
         //console.log('down')
@@ -56,8 +55,6 @@ $(function(){
     });
 });
 
-
-
 // Footer
 
 $(function() {
@@ -71,3 +68,27 @@ $(function() {
 $(document).ready(function() {
     InitWaypointAnimations();
 });
+
+// Sidescroll navigation
+
+/*$('.filler-content').scrollNav({
+    sections: 'h2',
+    subSections: false,
+    sectionElem: 'section',
+    showHeadline: true,
+    headlineText: 'Article Contents',
+    showTopLink: true,
+    topLinkText: 'Top',
+    fixedMargin: 40,
+    scrollOffset: 40,
+    animated: true,
+    speed: 500,
+    insertTarget: this.selector,
+    insertLocation: 'insertBefore',
+    arrowKeys: false,
+    scrollToHash: true,
+    onInit: null,
+    onRender: null,
+    onDestroy: null
+});*/
+
