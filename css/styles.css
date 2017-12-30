@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
 
 /* All elements
 ======================================== */
@@ -164,13 +164,18 @@ nav ul li ul li a {
     background: #122433;
   } 
 }
-
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1680px) {
+    .brand {
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 1400px) {
   .nav-mobile {
     display: block;
   }
-  
-    
+  .brand {
+    opacity: 1;
+  }
   nav {
     width: 100%;
     padding: 70px 0 15px;
@@ -194,7 +199,9 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 1381px) {
+
+
+@media screen and (min-width: 1401px) {
   .nav-list {
     display: block !important;
   }
@@ -256,6 +263,7 @@ nav ul li ul li a {
     height: 45vh;
     text-align: center;
     margin-top: 85px;
+    overflow: hidden;
 }
 
 #page-description-image {
@@ -264,12 +272,14 @@ nav ul li ul li a {
     border-bottom: 2px solid #AC966A;
     -webkit-transform: translate3d(0,0,0);
     z-index: -1;
+
 }
 
 .parallax-window {
     min-height: 400px;
     background: transparent;
     position: relative;
+    width: 100%;
 }
 
 #page-description-labels {
@@ -293,9 +303,6 @@ nav ul li ul li a {
     color: #AC966A;
 }
 
-#page-description-labels > p {
-    
-}
 
 
 /* Page Signifier
@@ -312,6 +319,7 @@ nav ul li ul li a {
     padding: 0;
     list-style-type: none;
     margin-left: 5vw;
+    transition: 0.35s all ease;
     
 }
 
@@ -345,13 +353,16 @@ nav ul li ul li a {
 }
 
 .feature-article {
+    transition: 0.35s all ease;
     width: 1050px;
     margin-top: -150px;
     padding: 40px;
     background: #fff;
     box-shadow:0 2px 8px rgba(0, 0, 0, .28);
-    z-index: 3;
+    position: relative;
+
 }
+
 
 .filler-content {
     font-family: "Montserrat";
@@ -400,13 +411,62 @@ nav ul li ul li a {
     width: 200px;
     height: 50px;
 }
-/* Sticky, Highlighting Navigation Bar
+
+@media only screen and (max-width:1815px) {
+    .feature-article {
+        margin-top: 0;
+    }
+    .scroll-nav {
+        top: -150px;
+    }
+    .page-signifier ul {
+        margin-left: 10vw;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .feature-article {
+        width: 90%;
+    }
+    #page-description-labels > p {
+        font-size: 11pt;
+    }
+    #page-description-labels > h1 {
+        font-size: 18pt;
+    }
+    .page-signifier > ul {
+        text-align: center;
+        transition: 0.35s all ease;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #page-description-labels > p {
+        display: none;
+        transition: 0.35s all ease;
+    }    
+    .page-description {
+        height: 28vh;
+        transition: 0.35s all ease;
+    }
+    #page-description-labels > h1 {
+        font-size: 16pt;
+        transition: 0.35s all ease;
+        text-align: center;
+    }
+}
+ /* Sticky, Highlighting Navigation Bar
 ======================================== */
 
 .scroll-nav {
   position: absolute;
-  left: 10vw;
+  left: 180px;
   margin-top: 200px;
+  opacity: 1;
+  margin-left: -400px;
+  max-width: 200px;
+  transition: 0.35s all ease;
 }
 
 .scroll-nav.fixed .scroll-nav__wrapper {
@@ -429,6 +489,11 @@ nav ul li ul li a {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 40px;
+}
+
+.scrollNav-hidden {
+  transition: 0.35s all ease;
+  opacity: 0;
 }
 
 span.scroll-nav__heading {
@@ -500,7 +565,7 @@ span.scroll-nav__heading {
   color: #AC966A;
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 10em) {
   .post__article {
     margin-left: 210px;
     padding: 30px;
@@ -534,7 +599,14 @@ span.scroll-nav__heading {
   .scroll-nav__link {
     padding-left: 30px;
   }
+
 }
+@media only screen and (max-width: 1540px) {
+    .scroll-nav {
+        opacity: 0;
+    }
+}
+
 
 /* Scroll Progress Bar & Navigation Holder
 ======================================== */
@@ -597,6 +669,11 @@ span.scroll-nav__heading {
 .progressBar-hidden {
   opacity: 0;
 }
+
+#abcd {
+    height: 500px;
+}
+
 
 /* Footer
 ======================================== */

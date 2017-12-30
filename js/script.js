@@ -95,10 +95,15 @@ $(window).load(function(){
   $(window).scroll(function() {
     var wintop = $(window).scrollTop(), docheight = $('article').height(), winheight = $(window).height();
     var progressBar = document.querySelector('.article-footer');
+    var scrollNav = document.querySelector('.scroll-nav');
     var totalScroll = (wintop/(docheight-winheight))*100;
     $(".KW_progressBar").css("width",(totalScroll-12)+"%");
-    if (totalScroll >= 115) {
+    if (totalScroll >= 130) {
+        scrollNav.classList += ' scrollNav-hidden';
+    }
+    else if (totalScroll >= 115) {
       progressBar.classList += ' progressBar-hidden';
+      scrollNav.classList.remove('scrollNav-hidden'); 
     }
     else if (totalScroll >= 20) {
       progressBar.classList = 'article-footer';
