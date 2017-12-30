@@ -536,6 +536,68 @@ span.scroll-nav__heading {
   }
 }
 
+/* Scroll Progress Bar & Navigation Holder
+======================================== */
+.article-footer {
+  left:0;
+  width: 100%;
+  height: 2.3em;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #172835;
+  content: "";
+	display: table;
+	table-layout: fixed;
+  transition: 0.55s all ease;
+}
+
+.article-footer > p {
+  margin-top: 9px;
+  margin-left: 15vw;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 12pt;
+  font-weight: 501;
+}
+
+.article-footer > p span {
+  color: #757480;
+  font-weight: 500;
+  font-size: 11pt;
+}
+
+.KW_progressContainer {
+  left:0;
+  width: 100%;
+  height: 0.4em;
+  margin-bottom: 2.2em;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #111017;
+  content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.KW_progressBar {
+  width: 0%;
+  float: left;
+  height: 100%;
+  z-index:99;
+  max-width: 100%;
+  background-color:#AC966A;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.progressBar-hidden {
+  opacity: 0;
+}
+
 /* Footer
 ======================================== */
 footer {

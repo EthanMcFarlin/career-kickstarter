@@ -25,9 +25,6 @@
 })(jQuery); // end jQuery
 
 // Navigation bar scrolling animation
-
-
-
 var nav = document.querySelector('.navigation');
 var position = 0;
 
@@ -90,4 +87,24 @@ $('.filler-content').scrollNav({
     onInit: null,
     onRender: null,
     onDestroy: null
+});
+
+// Animated scroll indicator
+
+$(window).load(function(){
+  $(window).scroll(function() {
+    var wintop = $(window).scrollTop(), docheight = $('article').height(), winheight = $(window).height();
+    var progressBar = document.querySelector('.article-footer');
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    $(".KW_progressBar").css("width",(totalScroll-12)+"%");
+    if (totalScroll >= 115) {
+      progressBar.classList += ' progressBar-hidden';
+    }
+    else if (totalScroll >= 20) {
+      progressBar.classList = 'article-footer';
+    }
+    else if (totalScroll <= 20) {
+        progressBar.classList = 'article-footer progressBar-hidden';
+    }
+  });
 });
