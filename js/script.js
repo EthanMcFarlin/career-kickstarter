@@ -1,6 +1,3 @@
-// Onload error debugging
-
-
 // Inner navigation layers + mobile configuration
 
 (function($) { // Begin jQuery
