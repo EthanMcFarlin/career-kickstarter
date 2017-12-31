@@ -670,10 +670,11 @@ span.scroll-nav__heading {
   opacity: 0;
 }
 
-#abcd {
+/* Continue Reading
+======================================== */
+.continue-read {
     height: 500px;
 }
-
 
 /* Footer
 ======================================== */

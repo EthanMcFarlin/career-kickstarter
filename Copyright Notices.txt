@@ -6,3 +6,4 @@ https://daneden.github.io/animate.css/
 
 http://blog.robamador.com/using-animate-css-jquery-waypoints/ <- Using Jquery + Animate.css for Scroll Animations ->
 https://github.com/ashergarland/easy-waypoint-animate <- Easy Waypoint in Automating Scroll Animations ->
+https://www.addthis.com/
