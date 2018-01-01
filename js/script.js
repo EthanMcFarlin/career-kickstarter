@@ -127,3 +127,17 @@ $('#return-to-top').click(function() {
         scrollTop : 0                       
     }, 500);
 });
+
+// Comment Management
+
+function showEasyPageComments(setname, data) {
+  document.getElementById('EasyPageComments').innerHTML = data; }
+
+function showEasyPageCommentForm(setname, data) {
+  document.getElementById('EasyPageCommentForm').innerHTML = data; }
+
+function addEasyPageComments() {
+  EasyPageComments.createCommentsList('EasyPageComments');
+  EasyPageComments.createCommentForm('EasyPageComments'); }
+
+document.addEventListener("DOMContentLoaded", addEasyPageComments, false)
