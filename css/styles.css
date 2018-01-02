@@ -672,6 +672,65 @@ span.scroll-nav__heading {
 /* Comment System
 ======================================== */
 
+/* Section Overview
+======================================== */
+.section-overview {
+  background: #636B6E; 
+  height: 300px;
+}
+
+.section-overview-content {
+    padding-top:40px;
+    width: 80%;
+    text-align: center;
+}
+
+.section-overview-button {
+    text-decoration: none;
+    color: #fff;
+    width: 40%;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-family: 'Raleway';
+    outline: 1px solid #AC966A;
+    padding: 14px;
+    font-weight: 500;  
+}
+
+.section-overview-button:hover {
+    transition: 0.35s all ease;
+    background: #1C2C37;
+    color: #fff;
+}
+
+.section-overview h1 {
+    color: #AC966A;
+    font-family: 'Raleway';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #AC966A;
+    width: 30%;
+}
+
+.section-overview p  {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 60%;
+    color: #fff;
+    font-family: 'Open Sans', 'Georgia';
+    font-size: 11pt;
+}
+
+.aside-image-1 {
+    position: absolute;
+    right: 10vw;
+    margin-top: 50px;
+}
+.aside-image-2 {
+    position: absolute;
+    left: 10vw;
+    margin-top: 50px;
+}
 
 /* Featured Tool
 ======================================== */

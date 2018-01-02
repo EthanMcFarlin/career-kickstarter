@@ -845,6 +845,7 @@
     outline: 1px solid #636B6E;
     padding: 14px;
     font-weight: 500;
+    transition: 0.35s all ease;
     
 }
 
