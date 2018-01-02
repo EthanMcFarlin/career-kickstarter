@@ -675,7 +675,7 @@ span.scroll-nav__heading {
 /* Section Overview
 ======================================== */
 .section-overview {
-  background: #636B6E; 
+  background: #1C2C37; 
   height: 300px;
 }
 
@@ -699,7 +699,7 @@ span.scroll-nav__heading {
 
 .section-overview-button:hover {
     transition: 0.35s all ease;
-    background: #1C2C37;
+    background: #AC966A;
     color: #fff;
 }
 
