@@ -259,13 +259,19 @@
 }
 
 @media only screen and (max-width: 535px) {
-    .mission > h1 > span {
-        font-size: 10pt;
+    #underline-short {
+        margin-top: -30px;
+    }
+    .home-hero p {
+        display: none;
     }
 }
 @media only screen and (max-width: 380px) {
     .mission > h1 > span {
-        font-size: 8pt;
+        font-size: 12pt;
+    }
+    .mission {
+        height: 200px;
     }
 }
 
@@ -278,7 +284,7 @@
 }
 
 #explore-features-parallax {
-    min-height: 45rem;
+    max-height: 45rem;
     background: transparent;
     width: 100vw;
     background: hsla(210, 35%, 16%, 0.4);
@@ -430,6 +436,11 @@
     .explore-features-content > h1 {
         opacity: 0;
     }
+    .grid {
+       display: grid;
+       grid-template-columns: repeat(2,200px);  /* 3 columns */
+       grid-template-rows: repeat(3,153.90px); /* 2 rows  */
+    }
 }
 
 /* User Testimonies
@@ -573,6 +584,7 @@
     border-bottom: 2px solid #AC966A;
 }
 
+
 .blog-card {
   transition: height 0.3s ease;
   -webkit-transition: height 0.3s ease;
@@ -589,7 +601,7 @@
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 1);
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #blog-contents {
@@ -806,7 +818,6 @@
         transform: translateX(0vw);
     }
 }
-
 /* About Us
 ======================================== */
 #about-us {
@@ -896,7 +907,7 @@
 
 /* About Us
 ======================================== */
-#call-to-action {
+#newsletter-section {
     height: 350px;
     background: hsla(210, 35%, 16%, 0.8);
     border-top: 2px solid #AC966A;

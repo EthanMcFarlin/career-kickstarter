@@ -275,7 +275,7 @@ nav ul li ul li a {
 }
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 200px;
     background: transparent;
     position: relative;
     width: 100%;
@@ -301,8 +301,6 @@ nav ul li ul li a {
 #page-description-labels > h1 > span {
     color: #AC966A;
 }
-
-
 
 /* Page Signifier
 ======================================== */
@@ -377,7 +375,6 @@ nav ul li ul li a {
 }
 
 .content-image-span {
-    height: 300px;
     width: 100%;
     box-shadow:0 2px 8px rgba(0, 0, 0, .28);
 }
@@ -672,6 +669,14 @@ span.scroll-nav__heading {
 /* Comment System
 ======================================== */
 
+#disqus_thread {
+    width: 80%;
+    padding: 20px;
+    margin-top: 50px;
+}
+#comment-policy {
+    
+}
 /* Section Overview
 ======================================== */
 .section-overview {
