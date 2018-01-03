@@ -46,8 +46,7 @@
 
 .header-content{
   align-content: center;
-    
-    z-index:2;
+  z-index:2;
 }
 
 .header-content > h1 {

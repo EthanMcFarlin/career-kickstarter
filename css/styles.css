@@ -646,8 +646,8 @@ span.scroll-nav__heading {
   overflow: hidden;
   background-color: #111017;
   content: "";
-	display: table;
-	table-layout: fixed;
+  display: table;
+  table-layout: fixed;
 }
 
 .KW_progressBar {
@@ -668,15 +668,27 @@ span.scroll-nav__heading {
 
 /* Comment System
 ======================================== */
-
 #disqus_thread {
-    width: 80%;
+    width:90%;
     padding: 20px;
     margin-top: 50px;
+    margin-bottom: -50px;
+    background: #fff;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
 }
-#comment-policy {
-    
+
+.subtle-underline {
+    border-top: 2px solid EBEDF2;
+    margin-top: 50px;
 }
+
+#disqus_thread {
+  overflow: hidden;
+}
+#disqus_thread iframe {
+    margin-bottom: -54px;
+}
+
 /* Section Overview
 ======================================== */
 .section-overview {
@@ -827,6 +839,7 @@ span.scroll-nav__heading {
 	transform: rotate(0) scale(1);
     
 }
+
 
 .row-explore-caption {
     text-align: center;

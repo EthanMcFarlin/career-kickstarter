@@ -9,7 +9,7 @@
         <link href="/css/fa-svg-with-js.css" rel="stylesheet" type=text/css>
         <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
         <link href="/css/animate.min.css" rel="stylesheet" type=text/css>
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
     </head>
     
      <body>
@@ -151,7 +151,7 @@
                 <div class="content-sidebar-wrap">
                     <main class="feature-article">
                         <article class="filler-content">
-                            <h2 class="content-header"> Background</h2>
+                            <h2 class="content-header animated fadeInUp"> Background</h2>
                             <div class="article-underline"></div>
                             <p class="content-text"> What is a resume, and why do you need one when you are job searching? A resume is a written compilation of your education, work experience, credentials, and accomplishments. Most professional positions require applicants to submit a resume and cover letter as part of the application process. </p> 
                             
@@ -209,9 +209,7 @@
                             <p class="content-text"> You should also familiarize yourself with the difference between a resume and a cover letter: A resume is typically sent with a cover letter, which is a document that provides additional information on your skills and experience in letter form.</p>
                         </article>
                     </main>
-    
                 </div>
-                
                 <div class="article-footer progressBar-hidden">
                   <div class="article-footer-logo"></div>
                   <p> <span>Now Reading: </span> Full Resume Tutorial</p>
@@ -222,8 +220,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="comment-list"></div>
-                <div id="comment-form"></div>
+                <div class="subtle-underline"></div>
+                <div id="disqus_thread"></div>             
             </section>
             <section class="section-overview">
                 <img class="aside-image-1" src="/img/icons/section-overview.png">
@@ -341,16 +339,21 @@
               </div>
          </footer>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <script language="JavaScript" type="text/javascript" src="/js/jquery-migrate-3.0.1.min.js"></script> 
         <script language="JavaScript" type="text/javascript" src="/js/fontawesome-all.min.js"></script>
         <script language="JavaScript" type="text/javascript" src="/js/parallax.min.js"></script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script language="JavaScript" type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
         <script language="JavaScript" type="text/javascript" src="/js/easy-waypoint-animate.js"></script>     
-        <script language="JavaScript" type="text/javascript" src="/js/jquery.scrollNav.min.js"></script>
-        <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>           
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a48140085a466e9">
-        </script>
-        <script type="text/javascript" src="EasyPageComments.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/jquery.scrollNav.min.js"></script>          
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a48140085a466e9">   </script>
+        <script language="JavaScript" type="text/javascript" src="/js/script.js"></script> 
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://career-kickstarter-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+      </script>    
     </body>
 </html>
