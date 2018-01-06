@@ -130,14 +130,8 @@ $('#return-to-top').click(function() {
 
 // Comment Management
 
-function showEasyPageComments(setname, data) {
-  document.getElementById('EasyPageComments').innerHTML = data; }
-
-function showEasyPageCommentForm(setname, data) {
-  document.getElementById('EasyPageCommentForm').innerHTML = data; }
-
-function addEasyPageComments() {
-  EasyPageComments.createCommentsList('EasyPageComments');
-  EasyPageComments.createCommentForm('EasyPageComments'); }
-
-document.addEventListener("DOMContentLoaded", addEasyPageComments, false)
+$(document).ready(function() {
+    $("#flippy").click(function() {
+        $("#flippanel").slideToggle("normal");
+    });
+});

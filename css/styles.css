@@ -15,6 +15,9 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
 ::selection {
     background: #AC966A; /* WebKit/Blink Browsers */
     color: #fff;
@@ -402,6 +405,30 @@ nav ul li ul li a {
     padding: 10px;
 }
 
+.underline-dotted {
+  border-bottom: 1px dashed #999;
+  text-decoration: none; 
+  color: #428CD0;
+  font-weight: 501;
+}
+
+.content-list {
+    font-size: 17px;
+    color: #666666;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    margin-top: -50px;
+    font-family: 'Open Sans', "Georgia", "serif", "Montserrat", 'Open Sans', 'Helvetica Neue'; 'Helvetica Neue';
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.content-link {
+    color: #428CD0;
+    text-decoration: none;
+}
+
 .right-sidebar {
     background: red;
     width: 200px;
@@ -671,10 +698,11 @@ span.scroll-nav__heading {
 #disqus_thread {
     width:90%;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: -50px;
     background: #fff;
     box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+    height: 350px;
 }
 
 .subtle-underline {
@@ -684,9 +712,47 @@ span.scroll-nav__heading {
 
 #disqus_thread {
   overflow: hidden;
+
 }
 #disqus_thread iframe {
     margin-bottom: -54px;
+}
+
+
+#flippy {
+    text-align: center;
+}
+
+#flippy button {
+    background: #232F3A;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 0px 0px #3E3E3E;
+    vertical-align: middle;
+    cursor: pointer;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease-in-out;
+}
+
+#flippy button:hover {
+    background: #AC966A;
+    outline: none;
+}
+
+#flippy button:focus {
+    background: #AC966A;
+    outline: none;
+}
+
+#flippanel {
+    display: none;
 }
 
 /* Section Overview
@@ -751,7 +817,6 @@ span.scroll-nav__heading {
 
 /* Featured Tool
 ======================================== */
-
 #section-featured-tool > h1 {
     color: #fff;
     font-family: 'Raleway';
@@ -800,6 +865,8 @@ span.scroll-nav__heading {
     width: 30%;
     padding-top: 15px;
 }
+
+
 
 /* Continue Reading
 ======================================== */
