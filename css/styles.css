@@ -190,6 +190,9 @@ nav ul li ul li a {
   nav ul li {
     float: none;
   }
+  .link {
+    width: 100vw;
+  }
   nav ul li a {
     padding: 15px;
     line-height: 20px;
@@ -270,7 +273,7 @@ nav ul li ul li a {
 }
 
 #page-description-image {
-    background: hsla(210, 35%, 16%, 0.9);
+    background: hsla(210, 35%, 16%, 0.75);
     height: 45vh;
     border-bottom: 2px solid #AC966A;
     -webkit-transform: translate3d(0,0,0);
@@ -433,6 +436,12 @@ nav ul li ul li a {
     background: red;
     width: 200px;
     height: 50px;
+}
+
+@media only screen and (max-width: 575px) {
+    .content-image-span {
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (max-width:1815px) {
@@ -1066,7 +1075,7 @@ span.scroll-nav__heading {
     border-bottom: 1px solid #AC966A;
 
 }
- 
+
 /* Return to Top
 ======================================== */
 #return-to-top {
@@ -1230,20 +1239,24 @@ footer .bottom-bar {
     transform: rotate(135deg);
     -webkit-transition: transform .5s;
     transition: transform .5s;
+    
   }
   footer .centered .footer-navigation .footer-links-holder .footer-links {
     max-height: 0;
     overflow: hidden;
     padding: 0 20px;
+    
   }
   footer .centered .footer-navigation .footer-links-holder.active h3::after {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    
   }
   footer .centered .footer-navigation .footer-links-holder.active .footer-links {
     max-height: 10000px;
+    
   }
 }
 /* Social Icons */
@@ -1338,4 +1351,12 @@ footer a:hover {
         font-size: 6pt;
     }
 }
+
+@media only screen and (max-width: 725px) {
+    footer .bottom-bar {
+        display: none;
+    }
+}
+
+
 

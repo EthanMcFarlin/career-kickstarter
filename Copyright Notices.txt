@@ -13,3 +13,5 @@ research https://binarybuffer.com/post/2017/09-open-source-comment-system/
 research http://aberer.io/meta/let-there-be-static-comments/
 
 research https://gohugo.io/content-management/comments/
+
+http://www.alessioatzeni.com/blog/simple-tooltip-with-jquery-only-text/
