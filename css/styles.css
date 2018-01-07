@@ -462,7 +462,19 @@ nav ul li ul li a {
 .tip-span {
     border-bottom:2px solid #AC966A;
 }
-
+.number-large {
+    font-size: 40pt;
+    padding-right: 10px;
+    color: #AC966A;
+}
+.number-correspond {
+    transition: 0.35s all ease;
+    color: #AC966A;
+    font-weight: 501;
+}
+.number-correspond:hover {
+    color: #428CD0;
+}
 .content-link {
     color: #428CD0;
     text-decoration: none;
@@ -602,7 +614,7 @@ span.scroll-nav__heading {
     text-decoration: none;
     color: #172835;
     font-family: Raleway, Georgia;
-    font-size: 11pt;
+    font-size: 10.6pt;
     padding-left: 6px;
     line-height: 20px;
     padding-bottom: 15px;
@@ -630,7 +642,6 @@ span.scroll-nav__heading {
   font-weight: 800;
   font-size: 10pt;
 }
-
 
 .scroll-nav__link {
   color: #fff;
@@ -702,6 +713,89 @@ span.scroll-nav__heading {
     font-family: Raleway;
 }
 
+/* Other Reads
+======================================== */
+
+.other-reads {
+    background: #fff;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+    width: 200px;
+    right: 140px;
+    transition: 0.5s all ease;
+}
+.read-resume {
+    position: absolute;
+    top: 600px;
+}
+.read-cover-letter {
+    position: absolute;
+    top: 1050px;
+}
+.read-job-openings {
+    position: absolute;
+    top: 1470px;
+}
+.read-career-articles {
+    position: absolute;
+    top: 1870px;
+}
+.read-productivity-tips {
+    position: absolute;
+    top: 2120px;
+}
+.read-interviewing {
+    position: absolute;
+    top: 2470px;
+}
+a.header-link-read-more h1:hover {
+    transition: 0.35s all ease;
+    color: #AC966A;
+}
+.other-reads h1 {
+    color: black;
+    font-weight: 500;
+    border-bottom: 2px solid #AC966A;
+    font-family: 'Raleway';
+    font-size: 14pt;
+    width: 80%;
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+.other-reads img {
+    display: flex;
+    margin-bottom: -30px;
+}
+.other-reads ul {
+    list-style: none;
+
+    padding: 20px;
+    margin-top: 15px;
+}
+.other-reads ul a {
+    transition: 0.35s all ease;
+    color: #428CD0;
+    font-family: Raleway;    
+}
+.other-reads ul a:hover {
+    color: #AC966A;   
+}
+.other-reads ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 1800px) {
+    .other-reads {
+        transform:translateX(50px);
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .other-reads {
+        display: none;
+    }
+}
 /* Scroll Progress Bar & Navigation Holder
 ======================================== */
 .article-footer {
@@ -714,9 +808,10 @@ span.scroll-nav__heading {
   overflow: hidden;
   background-color: #172835;
   content: "";
-	display: table;
-	table-layout: fixed;
+  display: table;
+  table-layout: fixed;
   transition: 0.55s all ease;
+  z-index: 2;
 }
 
 .article-footer > p {
