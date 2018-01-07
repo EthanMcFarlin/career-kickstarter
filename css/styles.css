@@ -425,6 +425,42 @@ nav ul li ul li a {
     font-family: 'Open Sans', "Georgia", "serif", "Montserrat", 'Open Sans', 'Helvetica Neue'; 'Helvetica Neue';
     padding: 10px;
     margin-left: 50px;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-left:4px solid #EAEDED;
+}
+
+.career-kickstarter-tip {
+    height: 100px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background: url(/img/icons/button-skin.png);
+    width: 750px;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .98);
+}
+
+.career-kickstarter-tip h1 {
+    color: #fff;
+    font-size: 18pt;
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 30%;
+    float: left;
+}
+.career-kickstarter-tip p {
+    color: #fff;
+    font-size: 10pt;
+    padding-top: 20px;
+    width: 70%;
+    text-align: right;
+}
+
+.career-kickstarter-tip p span:hover {
+    transition: 0.35s all ease;
+    color: #AC966A;
+}
+.tip-span {
+    border-bottom:2px solid #AC966A;
 }
 
 .content-link {
@@ -443,7 +479,16 @@ nav ul li ul li a {
         margin-left: 0px;
     }
 }
-
+@media only screen and (max-width: 975px) {
+    .career-kickstarter-tip {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 925px) {
+    .career-kickstarter-tip {
+        display: none;
+    }
+}
 @media only screen and (max-width:1815px) {
     .feature-article {
         margin-top: 0;
