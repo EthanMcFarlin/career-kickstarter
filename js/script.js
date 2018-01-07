@@ -135,3 +135,8 @@ $(document).ready(function() {
         $("#flippanel").slideToggle("normal");
     });
 });
+
+// Tool-Tips
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });

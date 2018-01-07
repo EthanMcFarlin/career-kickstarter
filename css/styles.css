@@ -1321,3 +1321,11 @@ footer a:hover {
         font-size: 6pt;
     }
 }
+
+/* Tool-Tips
+======================================== */
+
+$('.tooltip').tooltipster({
+    theme: 'tooltipster-noir';
+});
+
