@@ -49,13 +49,13 @@ a {
 }
 
 .pre-scroll .brand {
-    content: url("../img/logos/logo.png");
+    content: url("/img/logos/logo.png");
 }
 
 .brand {
   position: absolute;
   float: left;
-  content: url(../img/logos/shrunken_logo.png);
+  content: url(/img/logos/shrunken_logo.png);
   margin-top: 5px;
   transition: 0.35s all ease;
 }
@@ -434,7 +434,7 @@ nav ul li ul li a {
     height: 100px;
     margin-left: 40px;
     margin-bottom: 40px;
-    background: url(./img/icons/button-skin.png);
+    background: url(/img/icons/button-skin.png);
     width: 750px;
     box-shadow:0 2px 8px rgba(0, 0, 0, .98);
 }
@@ -1218,7 +1218,7 @@ a.header-link-read-more h1:hover {
 ======================================== */
 #continue-reading {
     height: 450px;
-    background: url(./img/article-headings/gradient-bottom.png);
+    background: url(/img/article-headings/gradient-bottom.png);
     border-bottom: 2px solid #AC966A;
 }
 
