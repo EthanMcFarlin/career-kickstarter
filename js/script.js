@@ -159,3 +159,23 @@ $(document).ready(function() {
                 .css({ top: mousey, left: mousex })
         });
 });
+
+// PDF Objects
+
+$(document).ready(function() {
+
+	$('a.btn-gallery').on('click', function(event) {
+		event.preventDefault();
+		
+		var gallery = $(this).attr('href');
+    
+		$(gallery).magnificPopup({
+      delegate: 'a',
+			type:'iframe',
+			gallery: {
+				enabled: true
+			}
+		}).magnificPopup('open');
+	});
+	
+});

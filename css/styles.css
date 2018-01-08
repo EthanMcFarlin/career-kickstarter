@@ -49,13 +49,13 @@ a {
 }
 
 .pre-scroll .brand {
-    content: url(/img/logos/logo.png);
+    content: url("../img/logos/logo.png");
 }
 
 .brand {
   position: absolute;
   float: left;
-  content: url(/img/logos/shrunken_logo.png);
+  content: url(../img/logos/shrunken_logo.png);
   margin-top: 5px;
   transition: 0.35s all ease;
 }
@@ -434,7 +434,7 @@ nav ul li ul li a {
     height: 100px;
     margin-left: 40px;
     margin-bottom: 40px;
-    background: url(/img/icons/button-skin.png);
+    background: url(./img/icons/button-skin.png);
     width: 750px;
     box-shadow:0 2px 8px rgba(0, 0, 0, .98);
 }
@@ -544,6 +544,186 @@ nav ul li ul li a {
         transition: 0.35s all ease;
         text-align: center;
     }
+}
+
+/* Table Captions
+======================================== */
+
+.rwd-table {
+  margin: 2em 2em;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow:0 2px 8px rgba(0, 0, 0, .98);
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+
+.rwd-table {
+  background: #435362;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  box-shadow:0 2px 8px rgba(0, 0, 0, .98);
+}
+.rwd-table tr {
+  border-color: #1A2836;
+  color: #D7D7D7;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 0.5em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  border-bottom: 4px solid #AC966A;
+  color: #fff;
+}
+.tble-heading {
+    font-weight: 900;
+    border-right: 4px solid #AC966A;
+    color: #fff;
+}
+p.p-heading-larger {
+    font-size: 14pt;
+    font-weight: 501;
+    width: 40%;
+    text-align: center;
+    margin-left: 250px;
+    border-bottom: 3px solid #AC966A;
+}
+
+/* PDF Objects
+======================================== */
+
+.resume-example {
+  box-shadow:0 2px 8px rgba(0, 0, 0, .48);
+}
+
+.pdf-container {
+  height: 284.96px;
+  width: 230px;
+  margin-bottom: 50px;
+  outline: 3px solid #AC966A;
+  background: #1A2836;
+  margin-left:40px;
+}
+
+.pdf-container-item > a > img {
+    width: 100%;
+    -webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+    
+}
+
+.pdf-container-caption {
+    text-align: center;
+    padding-top:15px;
+    opacity: 0;
+    line-height: 21px;
+    width: 20%;
+    position: absolute;
+    color: #fff;
+    margin-top:-210px;
+    margin-left: 10px;
+    text-transform: uppercase;                  
+    font-family: Raleway;
+    font-weight: 505;
+    transition: 0.5s ease-in-out;
+}
+
+.pdf-container-item span {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    text-transform: none;
+    font-weight: 300;
+    font-style: italic;
+    border-bottom: 2px solid #AC966A;
+}
+
+.pdf-container-item:hover > a > img {
+    opacity: 0.4;
+    -webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+    
+}
+
+.pdf-container-item:hover .pdf-container-caption {
+    opacity: 1;
+}
+
+.pdf-container h1 {
+   position: absolute;
+    width: 55%;
+    transform: translateY(-270px);
+    right: 120px;
+    font-size: 15pt;
+    padding-top: 14px;
+    border-top: 2px solid #AC966A;
+    color: #797979;
+}
+.pdf-container span {
+    font-size: 17px;
+    color: #666666;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Open Sans', "Georgia", "serif", "Montserrat", 'Open Sans', 'Helvetica Neue'; 'Helvetica Neue';
+    padding: 10px;
+
+}
+.pdf-container-item {
+    display: inline-block;
+}
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
 }
  /* Sticky, Highlighting Navigation Bar
 ======================================== */
@@ -1038,7 +1218,7 @@ a.header-link-read-more h1:hover {
 ======================================== */
 #continue-reading {
     height: 450px;
-    background: url(/img/article-headings/gradient-bottom.png);
+    background: url(./img/article-headings/gradient-bottom.png);
     border-bottom: 2px solid #AC966A;
 }
 
