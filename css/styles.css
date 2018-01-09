@@ -635,6 +635,117 @@ p.p-heading-larger {
     border-bottom: 3px solid #AC966A;
 }
 
+/* Pro-Con Chart
+======================================== */
+#pro-con-chart-2 {
+    transform: translateX(-4px);
+    border-right: 1px solid #EBEBEB;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .48);
+}
+#pro-con-chart-1 {
+    box-shadow:0 2px 8px rgba(0, 0, 0, .48);
+
+}
+
+#chart-header-1 {
+    background: #1EA145;
+}
+
+#chart-header-1 > h1, #chart-header-2 > h1 {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bullet-point h1 {
+    font-size: 11pt;
+    color: #202035;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    display: inline-block;
+}
+#chart-header-2 {
+    background: #FF4A46;
+}
+.pro-con-chart {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.chart-header {
+    background: red;
+}
+.pro-con-chart-column {
+    width: 380px;
+    display: inline-block;
+    border-left: 1px solid #EBEBEB;
+}
+
+.pro-con-chart-row {
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    background: #FAFAFA;
+}
+.pro-con-chart-row > i {
+    display: inline-block;
+    padding-left: 15px;
+    color: #00A050;
+}
+
+
+/* Use Recommendation
+======================================== */
+
+.use-recommendation {
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left:90px;
+}
+.in-favor {
+    border-left: 2px solid #69CA5D;
+}
+
+.in-favor p {
+    color: #00A050;
+}
+.in-favor ul {
+    color: #00A050;
+}
+.against {
+    border-left: 2px solid #FF4C4A;
+    margin-bottom: 80px;
+}
+
+.against p {
+    color: #FF4C4A;
+}
+
+.against ul {
+    color: #FF4C4A;
+}
+
+.use-recommendation p {
+    margin-left: 30px;
+    font-weight:900;
+    padding-bottom: 5px;
+    font-size: 13pt;
+}
+
+.use-recommendation ul {
+    margin-left: 80px;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Georgia';
+    font-size: 13pt;
+}
+
 /* PDF Objects
 ======================================== */
 
