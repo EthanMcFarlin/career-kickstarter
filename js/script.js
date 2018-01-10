@@ -98,10 +98,10 @@ $(window).load(function(){
     var scrollNav = document.querySelector('.scroll-nav');
     var totalScroll = (wintop/(docheight-winheight))*100;
     $(".KW_progressBar").css("width",(totalScroll-12)+"%");
-    if (totalScroll >= 115) {
+    if (totalScroll >= 106) {
         scrollNav.classList += ' scrollNav-hidden';
     }
-    else if (totalScroll >= 110) {
+    else if (totalScroll >= 105) {
       progressBar.classList += ' progressBar-hidden';
       scrollNav.classList.remove('scrollNav-hidden'); 
     }
