@@ -104,7 +104,7 @@ $(window).load(function(){
     else if (totalScroll >= 105) {
       progressBar.classList += ' progressBar-hidden';
       scrollNav.classList.remove('scrollNav-hidden'); 
-    }0
+    }
     else if (totalScroll >= 20) {
       progressBar.classList = 'article-footer';
     }
