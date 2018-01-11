@@ -152,7 +152,15 @@ nav ul li ul li a {
     .brand {
         display: none;
     }
+    
 }
+
+@media only screen and (max-width: 500px) {
+    .pre-scroll .brand {
+        content: url(/img/logos/minature-logo.png);
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .nav-mobile {
         left:70vw;
