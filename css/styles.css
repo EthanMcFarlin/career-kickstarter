@@ -423,6 +423,16 @@ nav ul li ul li a {
     padding: 10px;
 }
 
+.content-emphasis {
+    font-weight: 900;
+}
+
+.underline-side {
+    border-bottom:2px solid #AC966A;
+    width: 65%;
+    margin-left: 280px;
+    transform: translateY(-40px);
+}
 .underline-dotted {
   border-bottom: 1px dashed #999;
   text-decoration: none; 
@@ -1085,7 +1095,7 @@ span.scroll-nav__heading {
 }
 .read-resume {
     position: absolute;
-    top: 600px;
+    top: 650px;
 }
 .read-cover-letter {
     position: absolute;
