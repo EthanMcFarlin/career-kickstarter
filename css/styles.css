@@ -456,12 +456,14 @@ nav ul li ul li a {
 }
 
 .career-kickstarter-tip {
+    font-family: 'Montserra', 'Open Sans', "Georgia", "serif", 'Helvetica Neue';
     height: 100px;
     margin-left: 40px;
     margin-bottom: 40px;
     background: url(/img/icons/button-skin.png);
     width: 750px;
     box-shadow:0 2px 8px rgba(0, 0, 0, .98);
+    font-weight: 501;
 }
 
 .career-kickstarter-tip h1 {
