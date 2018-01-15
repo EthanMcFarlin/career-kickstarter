@@ -1,0 +1,238 @@
+/* Builder Hero-Image
+======================================== */
+.builder-image > h1, .builder-image > p {
+    color:#fff;
+    font-family: Raleway, "Montserrat", 'Open Sans', 'Helvetica Neue';
+    text-align: center;
+}
+.builder-image > h1 {
+    width: 300px;
+    padding-top: 80px;
+}
+#builder-underline {
+    width: 180px;
+    margin-top: 10px;
+    border-bottom: 2px solid #AC966A;
+}
+.builder-image > p {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.builder-image {
+    margin-top:70px;
+    height: 400px;
+}
+.builder-image-section {
+    background: hsla(210, 35%, 16%, 0.9);   
+}
+
+.builder-btn {
+    margin-top: 60px;
+    outline: 2px solid #AC966A;
+    background: #162334;
+    padding: 14px;
+    width: 210px;
+    transition: 0.35s all ease;
+    display: flex;
+}
+
+.builder-btn a {
+    font-family: 'Raleway';
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.builder-btn:hover{
+    background: #AC966A;
+    color: #fff;
+}
+.gear-container {
+    background: url(/img/icons/gear-container.png);
+    width: 75px;
+    height: 75px;
+}
+.gear {
+  margin-left: 13px;
+  margin-top: 12px;
+  width: 50px;
+  height: 50px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#gear-1 {
+  position: absolute; 
+  left: 25vw;
+  bottom: 200px;
+}
+#gear-2 {
+    position: absolute;
+    right: 25vw;
+    bottom: 200px;
+}
+.gear:hover {
+    transform: translateY(150px);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+/* Page Identifier
+======================================== */
+
+.template-selection {
+    display: inline-block;
+    width: 49.8%;
+    text-align: center;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+}
+
+.builder-page-identifier {
+    width:100%;
+    height: 100%;  
+    background: #656A6F;
+    margin-top: 0px;
+}
+.builder-page-identifier > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -110px;
+}
+.template-selection > h1, .template-selection i {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.template-selection > h1 {
+    color: #fff;
+    font-family: Raleway, "Montserrat", 'Open Sans', 'Helvetica Neue';
+    font-weight: 500;
+    padding-right: 10px;
+    font-size: 14pt;
+}
+
+#select-1 {
+    background: url(/img/icons/);
+}
+#select-1:hover {
+    transition: 0.1s all ease;
+    background: #54585D;
+}
+#select-2:hover {
+    transition: 0.1s all ease;
+    background: #121821;
+}
+#select-2 {
+    background: #22262A;
+}
+
+#file, #wrench {
+    color: #AC966A;
+}
+
+
+/* Template Collection
+======================================== */
+.template-collection {
+    background: #EDEDEE;
+    padding: 0;
+}
+
+.header-text-builder {
+    font-family:'Open Sans', 'Helvetica Neue',  "Montserrat";
+    color: #4B4B4B;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(39,42,46,0.25);
+    padding-top: 60px;
+    width:25%;
+    font-weight: 10;
+    font-size: 17pt;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.header-text-builder span {
+    font-weight: 800;
+ 
+}
+.template-thumbnails {
+    margin-top: 100px;
+}
+.section-active {
+    border-top:4px solid #6999D6;
+}
+.col-xs-2 {
+    background: #fff;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+    width: 275px;
+    height: 350px;
+}
+
+.box-container {
+    height: 310px;
+    background: url(/img/resume-templates/comb-1.jpg);
+    width: 100%;
+    border-bottom: 2px solid rgba(101,105,110,0.2);
+}
+
+.box-container-label {
+    background: #FAFAFA;
+    height:40px;
+    font-family:Raleway, 'Open Sans', 'Helvetica Neue', "Montserrat";
+    font-size: 9pt;
+    font-weight: 50;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: #7D7B7D;
+    font-style: italic;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+}
+
+.fa-tags {
+    display: inline-block;
+    transform: scale(1.2);
+    margin-bottom: 6px;
+
+}
+
+.box-container-label > h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fa-check {
+    transform: scale(5);
+    margin-top: 90px;
+    display: flex;
+    align-content: center;
+}
+
+.design-resume {
+    background: #AC966A;
+    margin-top: 145px;
+    width: 135%;
+    margin-left: -36px;
+    height: 150px;
+}
+
+.design-resume > h1 {
+   text-align: center;
+    font-family: Raleway, "Montserrat", 'Open Sans', 'Helvetica Neue';
+    font-size: 14pt;
+    padding-top: 2px;
+}
+
+
