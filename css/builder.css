@@ -7,7 +7,7 @@
 }
 .builder-image > h1 {
     width: 300px;
-    padding-top: 80px;
+    padding-top: 110px;
 }
 #builder-underline {
     width: 180px;
@@ -21,7 +21,7 @@
 
 .builder-image {
     margin-top:70px;
-    height: 400px;
+    height: 350px;
 }
 .builder-image-section {
     background: hsla(210, 35%, 16%, 0.9);   
@@ -45,12 +45,12 @@
 #gear-1 {
   position: absolute; 
   left: 25vw;
-  bottom: 200px;
+  bottom: 150px;
 }
 #gear-2 {
     position: absolute;
     right: 25vw;
-    bottom: 200px;
+    bottom: 150px;
 }
 .gear:hover {
     transform: translateY(150px);
@@ -160,7 +160,6 @@
 
 .box-container {
     height: 310px;
-    background: url(/img/resume-templates/comb-1.jpg);
     width: 100%;
     border-bottom: 2px solid rgba(101,105,110,0.2);
 }
@@ -201,7 +200,7 @@
 
 .design-resume {
     background: #AC966A;
-    margin-top: 145px;
+    margin-top: 146px;
     width: 135%;
     margin-left: -36px;
     height: 150px;
@@ -212,6 +211,7 @@
     font-family: Raleway, "Montserrat", 'Open Sans', 'Helvetica Neue';
     font-size: 14pt;
     padding-top: 2px;
+    margin-bottom: -02px;
 }
 
 /* Download Popup
