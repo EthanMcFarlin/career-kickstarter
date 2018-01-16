@@ -65,8 +65,15 @@
     }
 }
 
+/* Cover Letter Thumbnails
+======================================== */
 
-
+.cover-letter-box {
+    display: inline-block;
+}
+.cover-letter-row {
+    display: inline-block;
+}
 
 /* Page Identifier
 ======================================== */
@@ -191,7 +198,7 @@
     margin-left: 10px;
 }
 
-.fa-check {
+.fa-check, .fa-expand {
     transform: scale(5);
     margin-top: 90px;
     display: flex;
@@ -258,7 +265,6 @@
 /* Other Section Pages
 ======================================== */
 .builder-reread {
-    background: url(/img/article-headings/gradient-bottom-page-2.png);
     display: flex;
     flex-wrap: wrap;
 }
@@ -326,7 +332,7 @@ a.header-link-read-more h1:hover {
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: -160px;
+    margin-top: -200px;
     text-align:center;
     width: 300px;
     height: 50px;
@@ -370,11 +376,13 @@ a.header-link-read-more h1:hover {
     margin: 0 0 15px;
     font-family: 'Open Sans', "Georgia", "serif", "Montserrat", 'Open Sans', 'Helvetica Neue'; 'Helvetica Neue';
     padding: 10px;
-    padding-bottom: 50px;
     color: #666666;
     width: 53.5%;
     margin-left: 23vw;
-    margin-top: 40px;
+    margin-top: 100px;
+    background: #fff;
+    padding: 40px;
+    box-shadow:0 2px 8px rgba(0, 0, 0, .28);
 }
 .sample-intro > span {
     color:#626C6D;
@@ -383,7 +391,7 @@ a.header-link-read-more h1:hover {
     text-align: center;
     border-bottom: 1px solid rgba(39,42,46,0.25);
     padding-bottom: 5px;
-    width: 100vw;
+
 }
 
 #samples-template-header {
@@ -433,7 +441,7 @@ a {
   }
 }
 .categories {
-    margin-top: 290px;
+    margin-top: 190px;
     outline: 1px solid #AC966a;
 }
 .categories a {
@@ -559,6 +567,7 @@ a {
   -webkit-transition: -webkit-transform .3s;
   -moz-transition: -moz-transform .3s;
   transition: transform .3s;
+
 }
 .faq-items.slide-in {
   -webkit-transform: translateZ(0) translateX(0%);
@@ -803,8 +812,9 @@ a {
   color: #4e5359;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 250px;
   border-top: 1px solid rgba(39,42,46,0.25);
+  padding-bottom: 150px;
+  border-bottom: 1px solid rgba(39,42,46,0.25);
 }
 
 .sample-body-main {
