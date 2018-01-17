@@ -585,7 +585,7 @@
 }
 
 /* User Articles
-======================================== */
+======================================== 
 #user-articles-parallax {
     background: hsla(210, 35%, 16%, 0.8);
     height: 20vpx;
@@ -652,7 +652,7 @@
   margin: 0;
   padding: 10px 15px;
   height: 200px;
-  /*POSITION*/
+  /*POSITION
   position: absolute;
   top: 0;
   left: -100%;
@@ -742,7 +742,7 @@
   background: #AC966A;
   height: 6px;
   width: 40px;
-  /*POSITION*/
+  /*POSITION
   position: absolute;
   top: 6px;
   left: 0;
@@ -803,7 +803,7 @@
     background: #fff;
     width: 100%;
     z-index: -1;
-    /*POSITION*/
+    /*POSITION
     position: absolute;
     left: -15px;
     top: 0;
@@ -827,7 +827,7 @@
     }
 }
 /* About Us
-======================================== */
+======================================== 
 #about-us {
     height: 400px;
     width: 100%;
@@ -913,7 +913,67 @@
     }
 }
 
-/* About Us
+/* Resume Slideshow
+======================================== */
+.resume-slideshow {
+    background: #ECECED;
+    height: 600px;
+}
+.resume-slideshow h1, .resume-slideshow p {
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    color: #4E4E4E;
+}
+.resume-slideshow h1 {
+    padding-top: 30px;
+    font-size: 20pt;
+    width: 60%;
+}
+#resume-slideshow-underline {
+    border-bottom: 1px solid #BCBDBE;
+    width: 410px;
+    padding-top: 5px;
+}
+.resume-slideshow span {
+    font-weight: 900;
+}
+.resume-slideshow p {
+    font-family: Raleway;
+    padding-top: 20px;
+    width: 30%;
+}
+
+.resume-slider{
+  width: 60%;
+  margin:10px auto;
+  height: 390px;
+  margin-top: 30px;
+  padding: 25px;
+}
+.res-slide{
+  width: calc(33.3% - 10px);
+  background: url(/img/resume-templates/home-screen-resume-1.png);
+  height: 310px;
+  float:left;
+  text-align:center;
+  transition:all .3s;
+  color:#fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+}
+.res-slide b{
+  display:block;
+  margin-top: 40px;
+}
+.slick-center{
+  height: 335px;
+  transform: translateY(-5px)
+}
+
+
+/* Newsletter
 ======================================== */
 #newsletter-section {
     height: 350px;

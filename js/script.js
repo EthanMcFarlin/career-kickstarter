@@ -314,6 +314,4 @@ jQuery(document).ready(function($){
 	}
 });
 
-// Dress Guide Image Slider
-
-$('.cocoen').cocoen();
+// Home Screen Resume Slider
