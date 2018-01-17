@@ -79,7 +79,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 5rem;
+  margin-right: 6rem;
 }
 nav ul .u {
   list-style: none;
@@ -104,6 +104,7 @@ nav ul li a:visited {
   line-height: 70px;
   text-decoration: none;
   transition: 0.35s all ease;
+  padding-left: 45px;
 }
 nav > ul > li > a, nav > ul > li > a:visited {
     color: #ffffff;
@@ -1687,7 +1688,7 @@ footer .centered .footer-navigation {
   margin-left: 10vw;
 }
 footer .centered .footer-navigation .footer-links-holder {
-  width:15%;
+  width:17%;
   position: relative;
   float: left;
   margin: 0;

@@ -425,13 +425,22 @@
         grid-template-rows: repeat(2,116.25px); 
     }    
 }
+#remove-margin {
+     margin-top: -8vw; 
+}
 
 @media only screen and (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(3,100px);  
         grid-template-rows: repeat(2,77.5px); 
     }
+    #remove-margin {
+        margin-top: 10px;
+    }
     
+    #translateX {
+        margin-left: 18vw;
+    }
     .explore-features-content > h1 {
         opacity: 0;
     }
