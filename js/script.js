@@ -312,4 +312,8 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
-});s
+});
+
+// Dress Guide Image Slider
+
+$('.cocoen').cocoen();
