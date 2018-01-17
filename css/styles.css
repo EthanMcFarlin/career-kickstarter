@@ -1885,5 +1885,8 @@ footer a:hover {
     }
 }
 
-
-
+@media only screen and (max-width:1770px ) {
+    .brand {
+        content: url("/img/logos/minature-logo.png");
+    }
+}

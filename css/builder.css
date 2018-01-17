@@ -169,6 +169,7 @@
     height: 310px;
     width: 100%;
     border-bottom: 2px solid rgba(101,105,110,0.2);
+    border-top: 2px solid #AC966A;
 }
 
 .box-container-label {
