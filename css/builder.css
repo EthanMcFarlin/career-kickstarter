@@ -9,6 +9,35 @@
     width: 300px;
     padding-top: 110px;
 }
+
+@media only screen and (max-width:1315px) {
+    .sample-container {
+        transform:scale(0.7);
+    }
+}
+@media only screen and (max-width: 1139px) {
+    .sample-container {
+        display: none;
+    }
+    .builder-image > h1 {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 705px) {
+    #sample-btn {
+        transform:translateY(50px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    #sample-btn {
+        transform: translateY(100px);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .builder-image > p {
+        display: none;
+    }
+}
 #builder-underline {
     width: 180px;
     margin-top: 10px;
