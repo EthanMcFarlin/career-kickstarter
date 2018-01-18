@@ -100,7 +100,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 20px;
+  padding: 0 60px;
   line-height: 70px;
   text-decoration: none;
   transition: 0.35s all ease;
