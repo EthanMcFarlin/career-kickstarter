@@ -1129,11 +1129,12 @@ span.scroll-nav__heading {
 }
 .read-productivity-tips {
     position: absolute;
+    display: none;
     top: 1870px;
 }
 .read-interviewing {
     position: absolute;
-    top: 2225px;
+    top: 1870px;
 }
 a.header-link-read-more h1:hover {
     transition: 0.35s all ease;
