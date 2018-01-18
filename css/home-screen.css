@@ -585,7 +585,7 @@
 }
 
 /* User Articles
-======================================== 
+======================================== */
 #user-articles-parallax {
     background: hsla(210, 35%, 16%, 0.8);
     height: 20vpx;
@@ -609,7 +609,7 @@
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 1);
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 #blog-contents {
@@ -618,12 +618,7 @@
     height: 100%;
 }
 
-.blog-card:hover .details {
-  left: 0;
-}
-.blog-card:hover.alt .details {
-  right: 0;
-}
+
 .blog-card.alt .details {
   right: -100%;
   left: inherit;
@@ -652,7 +647,6 @@
   margin: 0;
   padding: 10px 15px;
   height: 200px;
-  /*POSITION
   position: absolute;
   top: 0;
   left: -100%;
@@ -660,25 +654,13 @@
 .blog-card .details > li {
   padding: 3px 0;
 }
-.blog-card .details li:before, .blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-.blog-card .details .author:before {
-  content: "\f007";
-}
-.blog-card .details .date:before {
-  content: "\f133";
-}
+
 .blog-card .details .tags ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.blog-card .details .tags ul:before {
-  content: "\f02b";
-}
+
 .blog-card .details .tags li {
   display: inline-block;
   margin-right: 3px;
@@ -738,45 +720,32 @@
     font-family: sans-serif;
 }
 
-.blog-card .description p:after {
-  background: #AC966A;
-  height: 6px;
-  width: 40px;
-  /*POSITION
-  position: absolute;
-  top: 6px;
-  left: 0;
-}
-
 .blog-card .description a:hover:after {
   margin-left: 5px;
   opacity: 1;
+}
+.sample-articles-text {
+    color: #fff;
+    font-family:Raleway, 'Open Sans', 'Helvetica Neue', "Montserrat";
+    font-size: 18pt;
+    padding-top: 25px;
+    text-align: center;
+}
+#sample-articles-underline {
+    width: 190px;
+    border-bottom: 3px solid #AC966A;
 }
 
 @media screen and (min-width: 600px) {
   .blog-card {
     height: 200px;
-    max-width: 600px;
-  }
-  .blog-card:hover .photo {
-    -webkit-transform: rotate(5deg) scale(1.3);
-            transform: rotate(5deg) scale(1.3);
-  }
-  .blog-card:hover.alt .photo {
-    -webkit-transform: rotate(-5deg) scale(1.3);
-            transform: rotate(-5deg) scale(1.3);
+    max-width: 600px
   }
   .blog-card.alt .details {
     padding-left: 30px;
   }
   .blog-card.alt .description {
     float: right;
-  }
-  .blog-card.alt .description:before {
-    -webkit-transform: skewX(5deg);
-            transform: skewX(5deg);
-    right: -15px;
-    left: inherit;
   }
   .blog-card.alt .photo {
     float: right;
@@ -796,19 +765,6 @@
     width: 60%;
     z-index: 0;
   }
-  .blog-card .description:before {
-    -webkit-transform: skewX(-5deg);
-            transform: skewX(-5deg);
-    content: "";
-    background: #fff;
-    width: 100%;
-    z-index: -1;
-    /*POSITION
-    position: absolute;
-    left: -15px;
-    top: 0;
-    bottom: 0;
-  }
 }
 
 @media only screen and (max-width: 1221px) {
@@ -826,6 +782,7 @@
         transform: translateX(0vw);
     }
 }
+
 /* About Us
 ======================================== 
 #about-us {
@@ -917,8 +874,34 @@
 ======================================== */
 .resume-slideshow {
     background: #ECECED;
-    height: 600px;
+    height: 690px;
 }
+.res-btns {
+    display: flex;
+    width: 70%;
+}
+.res-hm:hover {
+    background: #AC966A;
+}
+
+.res-hm {
+    display: inline-block;
+    transition: 0.5s all ease;
+    width: 18%;
+    outline: 2px solid #BABCBD;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background: #172835;
+}
+.res-hm a {
+    color: #fff;
+    font-family: Raleway;
+    padding: 5px;
+    font-weight: 501;
+}
+
+
 .resume-slideshow h1, .resume-slideshow p {
     font-family: Roboto;
     font-weight: 500;
@@ -941,19 +924,18 @@
 .resume-slideshow p {
     font-family: Raleway;
     padding-top: 20px;
-    width: 30%;
+    width: 60%;
 }
 
 .resume-slider{
-  width: 60%;
+  width: 1150px;
   margin:10px auto;
   height: 390px;
   margin-top: 30px;
   padding: 25px;
 }
 .res-slide{
-  width: calc(33.3% - 10px);
-  background: url(/img/resume-templates/home-screen-resume-1.png);
+  min-width: 165px;
   height: 310px;
   float:left;
   text-align:center;
@@ -962,14 +944,15 @@
   margin-left: 20px;
   margin-right: 20px;
   box-shadow:0 2px 8px rgba(0, 0, 0, .28);
+  transform: translateY(2px);
 }
 .res-slide b{
   display:block;
   margin-top: 40px;
 }
 .slick-center{
-  height: 335px;
-  transform: translateY(-5px)
+  height: 325px;
+  transform: translateY(-5px);
 }
 
 

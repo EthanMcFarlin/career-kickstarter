@@ -1129,11 +1129,11 @@ span.scroll-nav__heading {
 }
 .read-productivity-tips {
     position: absolute;
-    top: 2120px;
+    top: 1870px;
 }
 .read-interviewing {
     position: absolute;
-    top: 2470px;
+    top: 2225px;
 }
 a.header-link-read-more h1:hover {
     transition: 0.35s all ease;
@@ -1890,4 +1890,11 @@ footer a:hover {
     .brand {
         content: url("/img/logos/minature-logo.png");
     }
+}
+
+/* Terms of Service
+======================================== */
+
+.terms-of-service {
+    font-size: 17px;color: #666666;line-height: 30px;font-weight: 400;margin: 0 0 15px;font-family: 'Open Sans', 'Georgia', 'serif', 'Montserrat', 'Open Sans', 'Helvetica Neue';padding: 10px;
 }

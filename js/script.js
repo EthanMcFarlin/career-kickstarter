@@ -313,5 +313,3 @@ jQuery(document).ready(function($){
 		});
 	}
 });
-
-// Home Screen Resume Slider
