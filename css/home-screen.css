@@ -1019,3 +1019,10 @@
         width: 200px;
     }
 }
+
+@media only screen and (min-width: 1800px) {
+    #newsletter-image {
+        display: block;
+        margin-left:9vw;
+    }
+}
