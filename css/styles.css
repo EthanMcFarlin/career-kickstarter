@@ -1245,6 +1245,7 @@ a.header-link-read-more h1:hover {
 
 .progressBar-hidden {
   opacity: 0;
+  display: none;
 }
 
 /* Comment System
