@@ -64,7 +64,7 @@ a {
     transform: translateY(-90px);
 }
 
-.nav-container {border-bot
+.nav-container {
   max-width: 2000px;
   margin: 0 auto;
 }
@@ -1253,7 +1253,7 @@ a.header-link-read-more h1:hover {
   content: "";
   display: table;
   table-layout: fixed;
-  transition: 0.55s all ease;
+  transition: 0.35s all ease;
   z-index: 2;
 }
 

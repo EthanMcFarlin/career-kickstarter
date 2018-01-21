@@ -313,25 +313,3 @@ jQuery(document).ready(function($){
 		});
 	}
 });
-
-
-// Was it Helpful
-     
-new WasItHelpful('#was-it-helpful', {
-    labels: {
-        "question_text": "Was this article helpful?",
-        "answer_yes": "Yes",
-        "answer_no": "No",
-        "sorry_text": "Sorry about that! How can we improve it?",
-        "submit_btn": "Send feedback",
-        "thank_you": "Thanks!"
-    },
-    onSubmit: function (data) {
-        $.post('https://webhook.example.com', {
-            'subject': 'Page title',
-            'url': 'http://page.url.com',
-            'helpful': data.helpful ? '1' : '0',
-            'message': data.message
-        })
-    }
-});
