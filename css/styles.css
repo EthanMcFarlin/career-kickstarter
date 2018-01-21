@@ -2,8 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
 
-@font-face { font-family: 'FontAwesome'; src: url('../font/fontawesome-webfont.eot?v=3.2.1'); src: url('../font/fontawesome-webfont.eot?#iefix&v=3.2.1')
-
+@font-face { 
+    font-family: 'FontAwesome'; 
+    src: url('../font/fontawesome-webfont.eot?v=3.2.1'); 
+    src: url('../font/fontawesome-webfont.eot?#iefix&v=3.2.1');
+}
 /* All elements
 ======================================== */
 
