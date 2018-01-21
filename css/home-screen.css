@@ -981,10 +981,10 @@
 /* Newsletter
 ======================================== */
 #newsletter-section {
-    height: 350px;
     background: hsla(210, 35%, 16%, 0.8);
     border-top: 2px solid #AC966A;
     border-bottom: 2px solid #AC966A;
+    height: auto;
 }
 
 #newsletter-container {
@@ -992,6 +992,7 @@
     background-color: hsla(196, 5%, 41%, 0.6);
     width: 50%;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 #newsletter-image {

@@ -52,6 +52,15 @@ $(function(){
     });
 });
 
+
+$(function(){
+    $("#sample-btn").click(function(e){
+        e.preventDefault();
+        $path=$(".sample-body-main").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
+    });
+});
+
 // Footer
 
 $(function() {
