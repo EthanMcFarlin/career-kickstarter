@@ -60,7 +60,25 @@ $(function(){
         $('body,html').animate({scrollTop:$path},1500);
     });
 });
-
+$(function(){
+    $("#case-1").click(function(e){
+        e.preventDefault();
+        $path=$("#case-business").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
+    });
+});$(function(){
+    $("#case-2").click(function(e){
+        e.preventDefault();
+        $path=$("#case-business-casual").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
+    });
+});$(function(){
+    $("#case-3").click(function(e){
+        e.preventDefault();
+        $path=$("#case-casual").offset().top;
+        $('body,html').animate({scrollTop:$path},1500);
+    });
+});
 // Footer
 
 $(function() {
@@ -321,4 +339,10 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
+});
+
+// Alertify Buttons
+
+$('a.success').click(function() {
+  alertify.success('Resume Selected');
 });
