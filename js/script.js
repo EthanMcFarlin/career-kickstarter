@@ -322,4 +322,3 @@ jQuery(document).ready(function($){
 		});
 	}
 });
-
