@@ -49,6 +49,7 @@ a {
 
 .pre-scroll {
     background: none;
+    border-bottom: none;  
 }
 
 .pre-scroll .brand {
@@ -183,6 +184,7 @@ nav ul li ul li a {
   } 
   .navigation {
     background: #122433;
+    border-bottom: 1px solid #AC966A;
   } 
 }
 
@@ -1972,6 +1974,11 @@ footer a:hover {
 @media only screen and (max-width:1400px) {
     .brand {
         content: url("/img/logos/shrunken_logo.png");
+    }
+}
+@media only screen and (max-width:500px) {
+    .brand {
+        content: url("/img/logos/minature-logo.png") !important;
     }
 }
 

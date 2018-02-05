@@ -48,11 +48,16 @@
   align-content: center;
   z-index:2;
 }
-
+@media only screen and (max-width:950px) {
+    .header-content p {
+        width:70%;
+    }
+}
 .header-content > h1 {
   font-size:50px;
   margin-bottom:0;
   line-height: 3rem;
+    margin-top:60px;
 }
 
 .header-content p{
