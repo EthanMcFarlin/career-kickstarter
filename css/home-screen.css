@@ -40,8 +40,8 @@
   top:0;
   left:0;
   width:100vw;
-  z-index:-1;
-  background: hsla(207, 48%, 14%, 0.85);
+    background: hsla(207, 48%, 14%, 0.85);
+  z-index:-1
 }
 
 .header-content{
@@ -286,8 +286,6 @@
     max-height: 45rem;
     background: transparent;
     width: 100vw;
-    background: hsla(210, 35%, 16%, 0.4);
-
 }
 
 .container {
@@ -575,7 +573,6 @@
 /* User Articles
 ======================================== */
 #user-articles-parallax {
-    background: hsla(210, 35%, 16%, 0.8);
     height: 20vpx;
     border-bottom: 2px solid #AC966A;
 }
@@ -981,7 +978,6 @@
 /* Newsletter
 ======================================== */
 #newsletter-section {
-    background: hsla(210, 35%, 16%, 0.8);
     border-top: 2px solid #AC966A;
     border-bottom: 2px solid #AC966A;
     height: auto;
@@ -989,7 +985,6 @@
 
 #newsletter-container {
     outline: 1px solid #AC966A;
-    background-color: hsla(196, 5%, 41%, 0.6);
     width: 50%;
     height: 300px;
     margin-bottom: 20px;

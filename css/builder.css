@@ -52,9 +52,7 @@
     margin-top:70px;
     height: 350px;
 }
-.builder-image-section {
-    background: hsla(210, 35%, 16%, 0.9);   
-}
+
 
 .gear-container {
     background: url(/img/icons/gear-container.png);
@@ -258,7 +256,6 @@
     width: 430px;
     display: inline-block;
     outline: 1px solid #AC966A;
-    background-color: hsla(196, 5%, 41%, 0.6);
     margin: 40px;
 
 }
@@ -425,7 +422,6 @@ a.header-link-read-more h1:hover {
 }
 
 #samples-template-header {
-    background: hsla(210, 35%, 16%, 0.9); 
     border-top: 2px solid #AC966A;
     border-bottom: 2px solid #AC966A;
     height: 400px;

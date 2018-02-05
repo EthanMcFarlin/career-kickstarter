@@ -15,6 +15,7 @@
 
 html {
     overflow-x: hidden;
+        background: #1a2836;
 }
 
 a {
@@ -189,14 +190,9 @@ nav ul li ul li a {
     background: #122433;
   } 
 }
-@media only screen and (max-width: 1680px) {
-    .pre-scroll .brand {
-        content: url(/img/logos/minature-logo.png);
-    }
-}
 
 .abbreviated-logo {
-        content: url(/img/logos/minature-logo.png);
+        content: url(/img/logos/shrunken_logo.png);
 }
 @media only screen and (max-width: 1495px) {
     .pre-scroll .brand {
@@ -306,7 +302,6 @@ nav ul li ul li a {
 }
 
 #page-description-image {
-    background: hsla(210, 35%, 16%, 0.75);
     height: 45vh;
     border-bottom: 2px solid #AC966A;
     -webkit-transform: translate3d(0,0,0);
@@ -1974,9 +1969,19 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width:1770px ) {
+@media only screen and (max-width:1620px) {
     .brand {
         content: url("/img/logos/minature-logo.png");
+    }
+}
+@media only screen and (max-width:1620px) {
+    .brand {
+        content: url("/img/logos/minature-logo.png");
+    }
+}
+@media only screen and (max-width:1400px) {
+    .brand {
+        content: url("/img/logos/shrunken_logo.png");
     }
 }
 
