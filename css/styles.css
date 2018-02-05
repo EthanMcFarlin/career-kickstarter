@@ -170,11 +170,6 @@ nav ul li ul li a {
     
 }
 
-@media only screen and (max-width: 500px) {
-    .pre-scroll .brand {
-        content: url(/img/logos/minature-logo.png);
-    }
-}
 
 @media only screen and (max-width: 550px) {
     .nav-mobile {
@@ -1969,11 +1964,6 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width:1620px) {
-    .brand {
-        content: url("/img/logos/minature-logo.png");
-    }
-}
 @media only screen and (max-width:1620px) {
     .brand {
         content: url("/img/logos/minature-logo.png");
