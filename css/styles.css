@@ -103,7 +103,8 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 60px;
+  padding: 0 15px;
+  margin-right: 40px;
   line-height: 70px;
   text-decoration: none;
   transition: 0.35s all ease;
@@ -133,7 +134,7 @@ nav ul li a:visited:not(:only-child):after {
   content: ' ▾';
 }
 nav ul li ul li {
-  min-width: 240px;
+  min-width: 235px;
 }
 nav ul li ul li a {
   padding: 15px;
