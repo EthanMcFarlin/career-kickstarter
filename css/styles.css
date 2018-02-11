@@ -83,7 +83,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 nav ul .u {
   list-style: none;
@@ -96,7 +96,6 @@ nav ul li {
   position: relative;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #122433;
   font-weight: 350;
   font-family: Raleway;
 }
@@ -1117,6 +1116,7 @@ span.scroll-nav__heading {
 }
 .scroll-nav__link:hover {
   color: #AC966A;
+  font-weight: 900;
 }
 
 @media screen and (min-width: 10em) {
