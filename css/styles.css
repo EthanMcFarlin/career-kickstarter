@@ -84,6 +84,7 @@ nav ul {
   margin: 0;
   padding: 0;
   margin-right: 2rem;
+    padding-bottom:15px;
 }
 nav ul .u {
   list-style: none;
@@ -92,7 +93,7 @@ nav ul .u {
 }
 
 nav ul li {
-  float: left;
+    float:left;
   position: relative;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -116,7 +117,7 @@ nav > ul > li > a, nav > ul > li > a:visited {
 
 nav > ul > li > ul > li {
     background: #fff;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    padding-left:20px;
 }
 nav > ul > li > ul > li > a {
     color: #323233;
@@ -134,7 +135,7 @@ nav ul li a:visited:not(:only-child):after {
   content: ' ▾';
 }
 nav ul li ul li {
-  min-width: 235px;
+  min-width: 250px;
 }
 nav ul li ul li a {
   padding: 15px;
@@ -143,6 +144,7 @@ nav ul li ul li a {
 
 .nav-dropdown {
   position: absolute;
+  background: #fff;
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
