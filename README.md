@@ -7,6 +7,6 @@
 
 	- Competition category: Website design
 
-	- Site live at careerkickstarter.com
+	- Site live at career-kickstarter.com
 
 	- Questions? Email ethanmcfarlin@gmail.com
