@@ -1,12 +1,14 @@
-# fbla-careerkickstarter
-============================
+# Career Kickstarter: Business Guidance 
 
-	- Competition entry by Ethan J. McFarlin for the 2018, Colorado state leadership conference
+- Competition entry for the 2017-2018, Future Business Leaders of America District 6 Leadership Conference
 
-	- School: Thomas B. Doherty High
+- School: Thomas B. Doherty High
 
-	- Competition category: Website design
+- Author: Ethan McFarlin
 
-	- Site live at career-kickstarter.com
+- Event title: 'Website Design'
 
-	- Questions? Email ethanmcfarlin@gmail.com
+- Site live at career-kickstarter.com 
+ 
+- Questions? Email ethanmcfarlin@gmail.com
+
