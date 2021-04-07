@@ -7,8 +7,6 @@
 - Author: Ethan McFarlin
 
 - Event title: 'Website Design'
-
-- Site live at [career-kickstarter.com](https://career-kickstarter.github.io/)
  
 - Questions? Email ethanmcfarlin@gmail.com
 
